@@ -1,0 +1,62 @@
+{
+  "package": "GeoDose_Stage5C_PostFreeze_Closure_v1_0_0_DIRECT_RUN",
+  "version": "1.0.0",
+  "files": [
+    {
+      "file": "AUTHORITIES/GeoDose_External_Baseline_Full_Audit_Package.zip",
+      "bytes": 1165453,
+      "sha256": "75726d68de81c56e882f06eefc72267b17987c061adc5b7084f9997e3c29bc7f"
+    },
+    {
+      "file": "AUTHORITIES/Stage5B_MineDoseBench_Independent_Scientific_Audit.md",
+      "bytes": 10334,
+      "sha256": "689a0cc97fbf98096aa6a15199fadae4e71c91ada4b04914d764b8a080957422"
+    },
+    {
+      "file": "INPUTS/ESTIMATED_G_SENSITIVITY_RESULTS.zip",
+      "bytes": 2645563,
+      "sha256": "e17ceaf0e99679b8a5dd1167c662f8f1378926b5e09cd2228ba4fcd82187d386"
+    },
+    {
+      "file": "INPUTS/EXACT_SPARSE_AUDIT_VERIFIED_v2.zip",
+      "bytes": 298053,
+      "sha256": "d5cc525807a9193d507a4fc3aaba72ac1a2a74a7e52e391b19cec71ed6506bfb"
+    },
+    {
+      "file": "INPUTS/EXTERNAL_BASELINE_RESULTS.zip",
+      "bytes": 5970224,
+      "sha256": "d411d059bf3bf17bd9afc401a5c1ad8a0d9c4e9d60ab1759027e2de2660f4b8f"
+    },
+    {
+      "file": "INPUTS/STAGE5B_PRIMARY_RESULTS.zip",
+      "bytes": 35974515,
+      "sha256": "1a0df579bb58ea4a202dd9c4e7a168aafce5ac1c7f43b496ea6b7250771227ce"
+    },
+    {
+      "file": "README_RUN_FIRST.md",
+      "bytes": 1513,
+      "sha256": "38dd97dd8a1bcc2d1fe26ee9ef5b4eb14306b09d40dbf44f544f7812c3a9b613"
+    },
+    {
+      "file": "RUN_STAGE5C_CLOSURE.bat",
+      "bytes": 1993,
+      "sha256": "fb623d570d85806073d43291ac318bbe14772efb771fab7e33000380e3437ed8"
+    },
+    {
+      "file": "config/closure_contract.json",
+      "bytes": 2006,
+      "sha256": "b797156367c54e62994302afeff3176d1e6913154d93f02d0e3cac70035f6fd6"
+    },
+    {
+      "file": "requirements_py310.txt",
+      "bytes": 62,
+      "sha256": "077f6977ac9eaee807b83a0fac0fa19ecce0ef45f0f2946f25b3b06fd818b034"
+    },
+    {
+      "file": "run_stage5c_closure.py",
+      "bytes": 39308,
+      "sha256": "280133ce5a86759d833d1f553ac166af2fc3a662a01d132a7178636bac3327cb"
+    }
+  ],
+  "aggregate_sha256": "5e0ee60d82a19784280a526248747141bda719ccb8cba6518a78b7638527df18"
+}

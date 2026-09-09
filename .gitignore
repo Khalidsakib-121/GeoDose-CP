@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+.env
+*.log
+.DS_Store
+Thumbs.db
+# Keep raw third-party data out of Git history
+data/raw/
+cache/
+tmp/

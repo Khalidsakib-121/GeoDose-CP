@@ -1,0 +1,18 @@
+GeoDose-CP Stage6A NSW Real Demonstration
+
+1. Extract this package to a SHORT Windows path. Recommended:
+   D:\G6A
+
+2. Double-click:
+   RUN_NSW_REAL_DEMONSTRATION.bat
+
+3. Keep the laptop awake and plugged in.
+
+4. If the terminal/laptop is interrupted, run the SAME BAT again.
+   Do NOT delete _STAGE6A_WORK. Completed mine-scale-track checkpoints are reused.
+
+5. On success, send:
+   STAGE6A_NSW_REAL_OUTPUTS\GeoDose_Stage6A_NSW_REAL_DEMONSTRATION_RESULTS.zip
+   STAGE6A_NSW_REAL_POWERSHELL_LOG.txt
+
+Do not modify the frozen inputs, thresholds, method applicability, or claim boundary.

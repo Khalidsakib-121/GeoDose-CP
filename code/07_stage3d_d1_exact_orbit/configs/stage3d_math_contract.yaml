@@ -1,0 +1,84 @@
+stage: 3D
+release_scope: D0_D1_exact_orbit_algebra
+script_version: 1.1.0-stage3d-d0-d1-freeze
+canonical_sources:
+  - Unified math.docx
+  - Concise math.docx
+  - proposal.docx
+primary_chain:
+  - G1_finite_quotient_orbit_law
+  - G2_graph_local_target_orbit_law
+  - GMRF_exact_specialization
+  - G3_candidate_inversion_deferred_to_D2
+novelty_boundary:
+  headline: G2_non_gaussian_graph_local_target_orbit_law
+  imported: G3_generalized_conformal_probability_argument
+  computational_specialization: proper_gaussian_GMRF
+conditioning:
+  nuisance_training: independent_and_frozen
+  support_audit_graph_block_rules: independent_and_frozen
+  exact_orbit_information: unordered_distinct_numeric_payload_orbit_plus_fixed_slots_and_boundary
+  target_outcome_truth_allowed_for_D1_testing_only: true
+  target_outcome_truth_allowed_for_inference: false
+nuisance_regime:
+  D1: oracle_generator_truth_algebra_only
+  estimated_nuisance_coverage_claim: false
+fixed_slot_fields:
+  - unit_id
+  - node_index
+  - coordinates
+  - pretreatment_covariates
+  - role
+  - graph_identity
+  - boundary_identity
+movable_payload_fields:
+  - A
+  - Y
+candidate_source_metadata:
+  purpose: identify_which_response_is_replaced_before_orbit_construction
+  part_of_payload_equivalence: false
+target_payload_rule: replace_candidate_source_Y_then_form_the_numeric_A_Y_multiset_and_quotient_orbit
+exact_log_weight:
+  expression: log_w_pi = log_LA_pi + log_J_pi + log_LR_pi
+  treatment_factor: q_target_slot(A_assigned_to_target_slot) * product_non_target_slots g_i(A_assigned_to_i|U_i)
+  target_positivity: q_positive_implies_target_slot_g_positive
+  zero_non_target_likelihood: allowed_as_zero_probability_orbit_state
+  jacobian_factor: product_block_slots abs(d residual_i / d Y_i)
+  residual_factor: product_cliques_intersecting_block psi_C(residual_C)
+  normalization: candidate_specific_distinct_quotient_orbit_logsumexp
+GMRF_specialization:
+  expression: log_LR_pi = -0.5*r_B^T Q_BB r_B - r_B^T Q_BD r_D + orbit_constant
+  determinant: cancels
+  dense_precision_inverse: prohibited
+non_gaussian_specialization:
+  route: componentwise_monotone_transform_of_latent_GMRF
+  inverse_transform: z = sign(r)*abs(r)^(1/p)
+  density_jacobian: abs(dz/dr) = (1/p)*abs(r)^(1/p-1)
+  graph_markov_structure: preserved_by_componentwise_bijection
+  claim_boundary: one_non_gaussian_specialization_validates_the_general_G2_factorization_but_is_not_an_arbitrary_clique_plugin
+implemented_in_this_release:
+  - D0_machine_readable_contracts
+  - candidate_specific_distinct_multiset_orbit_enumeration
+  - target_calibration_collision_quotient_audit
+  - exact_mixed_measure_treatment_factor
+  - target_tilt_positivity_and_cancellation_audit
+  - affine_outcome_residual_jacobian
+  - graph_boundary_extraction
+  - proper_GMRF_local_residual_factor
+  - transformed_GMRF_non_gaussian_residual_factor
+  - independent_loop_scalar_reference_engine
+  - vectorized_exact_engine
+  - full_joint_target_law_vs_graph_local_probability_audit
+  - duplicate_quotient_orbit_audit
+  - full_vs_local_cancellation_audit
+  - endpoint_atom_audit
+not_implemented:
+  - G3_candidate_p_values
+  - candidate_grid_inversion
+  - prediction_sets
+  - M3_final_spatial_only_generalized_conformal
+  - M4_final_naive_product
+  - M6_exact_intervals
+  - N2_N3_scalable_certification
+  - estimated_nuisance_exact_coverage
+  - coverage_claims

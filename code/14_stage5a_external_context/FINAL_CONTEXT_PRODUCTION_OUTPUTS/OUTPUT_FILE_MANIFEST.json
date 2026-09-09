@@ -1,0 +1,131 @@
+{
+  "aggregate_sha256": "df953f9b07bfe4ab53f56f38273bf97f00d63afbac4942ea406d8737048dedcd",
+  "file_count": 25,
+  "files": [
+    {
+      "file": "CONTEXT_ATTRITION_AUDIT.json",
+      "sha256": "06f11e050eab11593995a8567d33b3ec4c0d3cb9b7018ca7aa083f0777b144ea",
+      "size": 581
+    },
+    {
+      "file": "CONTEXT_ATTRITION_BY_MINE.csv",
+      "sha256": "36b8c050a34c1ab909823e691c160d8d89cbbae941ecc704d129cd86b18711c7",
+      "size": 399
+    },
+    {
+      "file": "CONTEXT_ATTRITION_FAILURE_PATTERNS.csv",
+      "sha256": "5a30864cf73d3ec41b263d68e93e459e9ccc3b9b445eb8c7bf49185228068bcf",
+      "size": 820
+    },
+    {
+      "file": "CONTEXT_ATTRITION_PREOUTCOME_SPATIAL_AUDIT.csv",
+      "sha256": "fc3093e3f96158eba6a7ff9baa2ac1b0ff5ca667810300c2a4e44055f26ce21c",
+      "size": 2007
+    },
+    {
+      "file": "CONTEXT_DERIVATION_FORMULA_AUDIT.csv",
+      "sha256": "b7845ba4b74daade5b1bf51f4df408bd001c1228f6e37b86d6f3be0f66fc4114",
+      "size": 245
+    },
+    {
+      "file": "CONTEXT_FINAL_VERIFICATION.json",
+      "sha256": "a9a664eb650cec4b29f317fb34c8f049b38af3f2872f06993c080e6b58eb74f7",
+      "size": 890
+    },
+    {
+      "file": "CONTEXT_FINAL_VERIFICATION_CHECKS.json",
+      "sha256": "a7ed504f7f266be6252036aa99f61e92f63a397c2fb6c9b7611e6ba8f6dd45f7",
+      "size": 6473
+    },
+    {
+      "file": "context_metadata.json",
+      "sha256": "b282598d3c30d898dbb615eee54fd7ca9a67739831431a7aa01d5bbece009520",
+      "size": 3239
+    },
+    {
+      "file": "CONTEXT_PRODUCTION_REPORT.json",
+      "sha256": "e60e469f63b66bf78df143d6a38f2c4fd2b9642079f7e7a7c96b25c393628275",
+      "size": 695
+    },
+    {
+      "file": "CONTEXT_RANGE_QA.csv",
+      "sha256": "e678bdb1c2a60fc641293e14e99b2278873242a1f5d3647d0066215f7fed139a",
+      "size": 2830
+    },
+    {
+      "file": "CONTEXT_RANGE_SUMMARY_BY_MINE.csv",
+      "sha256": "e8387ed170897d22c772780b5844dec626afc2c8731c006c3ef32d5dcd50a230",
+      "size": 7932
+    },
+    {
+      "file": "CONTEXT_SUPPORT_RECONCILIATION.csv",
+      "sha256": "dcf7524b35fc5eed43afc611668ac5f11597004adf21a44b2f5cc836fa4d2e13",
+      "size": 1045
+    },
+    {
+      "file": "CONTEXT_VALID_AREA_QA.csv.gz",
+      "sha256": "a6306e212b4827780066d80f482592a33b2368d2ee60c27d0fc3b02cc0584f19",
+      "size": 92974
+    },
+    {
+      "file": "FROZEN_CONTEXT_COMPLETE_SUBSTRATE.csv",
+      "sha256": "06d2ab242f5f29feb8581c4f42aab3dc95842d84a5c86beb9351ab5c2d312426",
+      "size": 4986468
+    },
+    {
+      "file": "FROZEN_CONTEXT_SUPPORT_EXCLUSIONS.csv",
+      "sha256": "a745acc2a7577067950c92689e9dbebd9d25bed8007f288000e107e6465ce8b6",
+      "size": 32527
+    },
+    {
+      "file": "FROZEN_SOURCE_LAYER_SUPPORT_SUMMARY.csv",
+      "sha256": "dd656f401b3e52d3270e28f4c4153f8dc55697ee8d73c2c72f61872f16440887",
+      "size": 5644
+    },
+    {
+      "file": "GeoDose_Stage5A_CONTEXT_SOURCE_SNAPSHOT.zip",
+      "sha256": "93468aad45ca145fd3a80ee1758685f8877a46a79d6156a4d77e51198e4e3e52",
+      "size": 26006866
+    },
+    {
+      "file": "mine_context_covariates.csv",
+      "sha256": "0af86d98a813e461440f4f8a4f9ab53e1434bcb0ef60bb27eee2e0186a008b67",
+      "size": 6270203
+    },
+    {
+      "file": "READY_FOR_STAGE5A_REVISED_FREEZE/context_metadata.json",
+      "sha256": "b282598d3c30d898dbb615eee54fd7ca9a67739831431a7aa01d5bbece009520",
+      "size": 3239
+    },
+    {
+      "file": "READY_FOR_STAGE5A_REVISED_FREEZE/FROZEN_CONTEXT_COMPLETE_SUBSTRATE.csv",
+      "sha256": "06d2ab242f5f29feb8581c4f42aab3dc95842d84a5c86beb9351ab5c2d312426",
+      "size": 4986468
+    },
+    {
+      "file": "READY_FOR_STAGE5A_REVISED_FREEZE/FROZEN_CONTEXT_SUPPORT_EXCLUSIONS.csv",
+      "sha256": "a745acc2a7577067950c92689e9dbebd9d25bed8007f288000e107e6465ce8b6",
+      "size": 32527
+    },
+    {
+      "file": "READY_FOR_STAGE5A_REVISED_FREEZE/IMPORTANT_NEXT_STEP.txt",
+      "sha256": "489a51fb2c6621d9874fa38e660c331760986c68f02952a54970af86ba807af4",
+      "size": 358
+    },
+    {
+      "file": "READY_FOR_STAGE5A_REVISED_FREEZE/mine_context_covariates.csv",
+      "sha256": "0af86d98a813e461440f4f8a4f9ab53e1434bcb0ef60bb27eee2e0186a008b67",
+      "size": 6270203
+    },
+    {
+      "file": "SOIL_DEPTH_COMPONENT_AUDIT.csv.gz",
+      "sha256": "59350695a309c86bcf55a9d91a3b2d9489c7c3e12b4a8eb3d94469b9bb7a3761",
+      "size": 2623676
+    },
+    {
+      "file": "SOURCE_PROVENANCE_MANIFEST.json",
+      "sha256": "8c93efa9c7a0f55e5106c78d9b217ed74e7312a4b20bbc6179d5e5d6d8616309",
+      "size": 40864
+    }
+  ]
+}

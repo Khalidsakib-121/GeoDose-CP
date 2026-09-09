@@ -1,0 +1,32 @@
+stage: 3C-reference-infrastructure
+version: 1.1.0
+alpha: 0.10
+primary_score: absolute_observed_residual
+scientific_boundary:
+  M1: implemented principal baseline
+  M2: implemented principal baseline
+  M3: deferred; final method must use graph-local residual-law generalized conformal machinery
+  M4: deferred; final naive product must use the final M3 spatial-law weight
+  M5: implemented principal conservative baseline with explicit sampling-eligibility flag
+  M6: deferred to Stage3D/Stage3E
+heuristic_ablations:
+  H1:
+    name: geographic_euclidean_distance_heuristic
+    source_registry: ABL7
+    definition: Euclidean-coordinate Gaussian kernel exp(-d^2/(2*0.25^2)) on the absolute scale k(0)=1; not theorem-certified M3
+  H4:
+    name: naive_product_M2_times_H1
+    source_registry: ABL4 plus ABL7
+    definition: ordinary weighted conformal using treatment weights times H1 heuristic weights
+weighted_quantile:
+  target_pseudo_score: positive infinity
+  target_pseudo_weight: included
+  ties: conservative upper quantile
+  computation: stable log scale
+nuisance_variants:
+  OT_TG: oracle treatment plus true graph
+  ET_TG: estimated treatment plus true graph
+  OT_FG: oracle treatment plus fitted graph
+  ET_FG: estimated treatment plus fitted graph
+seed_rule: use Stage3A frozen nuisance_seed for replication 1; derive labelled substreams without case-specific reseeding
+operational_thresholds: deferred until the 20-replication pilot

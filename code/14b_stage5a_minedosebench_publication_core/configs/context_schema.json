@@ -1,0 +1,41 @@
+{
+  "schema_version": "1.1",
+  "key": "block_id",
+  "required_numeric_columns": [
+    "rainfall_2023_mm",
+    "rainfall_2024_mm",
+    "et_short_crop_2023_mm",
+    "et_short_crop_2024_mm",
+    "soil_organic_carbon_pct_0_15cm",
+    "soil_ph_cacl2_0_15cm",
+    "soil_clay_pct_0_15cm",
+    "soil_bulk_density_g_cm3_0_15cm",
+    "soil_available_water_capacity_mm_0_100cm",
+    "terrain_elevation_m",
+    "terrain_slope_deg",
+    "terrain_aspect_deg",
+    "terrain_roughness"
+  ],
+  "physical_ranges": {
+    "rainfall_2023_mm": [0.0, 5000.0],
+    "rainfall_2024_mm": [0.0, 5000.0],
+    "et_short_crop_2023_mm": [0.0, 4000.0],
+    "et_short_crop_2024_mm": [0.0, 4000.0],
+    "soil_organic_carbon_pct_0_15cm": [0.0, 50.0],
+    "soil_ph_cacl2_0_15cm": [2.0, 10.5],
+    "soil_clay_pct_0_15cm": [0.0, 100.0],
+    "soil_bulk_density_g_cm3_0_15cm": [0.2, 3.0],
+    "soil_available_water_capacity_mm_0_100cm": [0.0, 700.0],
+    "terrain_elevation_m": [-100.0, 3000.0],
+    "terrain_slope_deg": [0.0, 90.0],
+    "terrain_aspect_deg": [0.0, 360.0],
+    "terrain_roughness": [0.0, 5000.0]
+  },
+  "derived_columns": {
+    "rainfall_2yr_mean_mm": "mean(rainfall_2023_mm, rainfall_2024_mm)",
+    "et_2yr_mean_mm": "mean(et_short_crop_2023_mm, et_short_crop_2024_mm)",
+    "climate_water_balance_2yr_mean_mm": "rainfall_2yr_mean_mm - et_2yr_mean_mm"
+  },
+  "required_spatial_aggregation": "AREA_WEIGHTED_BLOCK_POLYGON",
+  "scientific_rule": "Official benchmark context must be extracted from real documented products by area-weighted intersection with the frozen benchmark polygons. Centroid-only extraction, fabricated values, synthetic substitutes, NaN and infinity are prohibited."
+}

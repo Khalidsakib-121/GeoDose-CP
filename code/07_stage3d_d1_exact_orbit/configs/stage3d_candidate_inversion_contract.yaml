@@ -1,0 +1,31 @@
+status: frozen_for_D2_but_not_executed_in_D1
+alpha_primary: 0.10
+candidate_domain:
+  freeze_time: before_final_calibration_outcomes_are_inspected
+  data_allowed: independent_nuisance_training_outcomes_only
+  calibration_outcomes_allowed: false
+  target_truth_allowed: false
+  support_audit_outcomes_allowed: false
+  physical_range_if_known: takes_precedence
+  fallback_center: nuisance_training_median
+  fallback_robust_scale: max(1.4826*MAD, IQR/1.349, 0.10)
+  fallback_lower: center_minus_8_robust_scales
+  fallback_upper: center_plus_8_robust_scales
+coarse_grid_points: 257
+staggered_grid_points: 256
+boundary_refinement:
+  method: deterministic_bisection_on_every_acceptance_change
+  absolute_tolerance: 1.0e-6
+  relative_tolerance: 1.0e-5
+  maximum_depth: 40
+candidate_orbit_rule:
+  replace_response_first: true
+  recompute_exact_payload_multiplicities: true
+  source_origin_excluded_from_equivalence: true
+set_representation:
+  raw_disconnected_components: authoritative
+  convex_hull: optional_summary_only
+  hull_inflation: mandatory_report
+tie_rules:
+  primary: randomized_with_frozen_orbit_seed
+  sensitivity: conservative_upper_tail

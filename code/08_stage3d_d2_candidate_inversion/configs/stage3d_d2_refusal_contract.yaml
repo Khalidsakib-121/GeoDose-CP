@@ -1,0 +1,22 @@
+refusal_codes:
+  D2_INPUT_HASH_MISMATCH: frozen D1 or upstream input changed
+  D2_D1_SOURCE_MISMATCH: inherited D1 source file differs from accepted D1 source package
+  D2_D1_OUTPUT_NOT_VERIFIED: accepted D1 output is missing or not verified complete
+  D2_CONTRACT_MISMATCH: D2 machine-readable contracts are inconsistent
+  D2_CANDIDATE_DOMAIN_INVALID: fixed registered domain is missing or invalid
+  D2_TARGET_TRUTH_LEAKAGE: target or observed outcome affected domain, grid, tie seed, or refinement
+  D2_OBSERVED_ASSIGNMENT_INVALID: identity observed assignment is absent or not state zero
+  D2_ORBIT_EVALUATION_FAILED: exact candidate orbit probability cannot be computed
+  D2_SCORE_INVALID: nonconformity score is nonfinite
+  D2_PVALUE_INVALID: p-value categories or masses are nonfinite or inconsistent
+  D2_BOUNDARY_UNRESOLVED: outer boundary bracket did not meet frozen tolerance
+  D2_INDEPENDENT_GRID_FALSE_NEGATIVE: returned outer set excluded a directly accepted independent-grid point
+  D2_OUTER_SET_EXCESS_UNEXPLAINED: outer-set false positive lies outside a registered boundary bracket
+  D2_TOPOLOGY_VALIDATION_FAILED: analytic or brute-force topology fixture was not reproduced
+  D2_RANDOMIZED_NOT_SUBSET_CONSERVATIVE: randomized accepted set exceeds conservative set
+  D2_SIZE8_LIMIT_EXCEEDED: size8 stress exceeds frozen 40320-state cap
+  D2_MANIFEST_MISMATCH: generated output does not match manifest
+special_non_refusal_warning:
+  D2_TRANSFORM_SINGULAR_POINT_INCLUDED: transformed-density point singularity conservatively included; no pointwise orbit-pmf claim
+  D2_DOMAIN_TRUNCATED_SET: result is restricted to the fixed registered finite D2 domain and is not a full-real-line claim
+D2_behavior: fail_closed_except_registered_set_enlarging_rules

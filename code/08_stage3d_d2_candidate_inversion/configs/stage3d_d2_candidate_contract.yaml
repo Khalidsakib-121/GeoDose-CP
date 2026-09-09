@@ -1,0 +1,91 @@
+alpha_primary: 0.10
+candidate_domain:
+  domain_type: fixed_registered_domain_truncated_reference
+  source: a_priori_D2_numerical_contract_not_observed_outcomes
+  lower: -8.0
+  upper: 8.0
+  target_truth_allowed: false
+  observed_outcomes_allowed: false
+  physical_range_registered: false
+  controlled_latent_outcome_support: unbounded_due_to_gaussian_residual
+  returned_object: outer_numerical_approximation_of_C_alpha_intersection_registered_domain
+  full_real_line_claim: false
+  unbounded_claim: false
+initial_grid:
+  coarse_points: 257
+  staggered_midpoints: 256
+  certification_grid_points: 2049
+  include_score_tie_landmarks: true
+  include_numeric_payload_collision_landmarks: true
+  include_transformed_density_singularity_landmarks: true
+  landmark_flank_relative_to_domain: 1.0e-7
+  landmark_flank_minimum: 2.0e-6
+boundary_refinement:
+  method: deterministic_bisection_on_every_observed_acceptance_change
+  absolute_tolerance: 1.0e-6
+  relative_tolerance: 1.0e-5
+  maximum_depth: 40
+  returned_endpoint: rejected_side_open_outer_endpoint
+  numerical_set_direction: set_enlarging_outer_approximation
+  exact_boundary_claim: false
+  unresolved_boundary_behavior: refuse
+score_comparison:
+  certified_structural_tie: identical_numeric_A_Y_payload_at_fixed_target_slot
+  certified_strict_greater: score_greater_than_observed_beyond_frozen_tolerance
+  certified_strict_less: score_less_than_observed_beyond_frozen_tolerance
+  ambiguous_near_tie: included_in_full_in_both_p_values
+  absolute_tolerance: 1.0e-12
+  relative_tolerance: 1.0e-12
+randomization:
+  source: Stage3A_pilot_replication_1_orbit_seed
+  scenario_mapping: all_D2_fixtures_use_S4
+  derived_subseed_label: D2_G3_TIE_UNIFORM
+  one_uniform_per_fixture: true
+  uniform_held_fixed_across_candidates: true
+  randomized_mass: certified_strict_greater_plus_ambiguous_plus_U_times_structural_tie
+  exact_randomized_claim_only_when_ambiguous_mass_zero: true
+  conservative_p_value_is_primary_certified_output: true
+set_representation:
+  candidate_trace: exact_at_evaluated_candidates_except_registered_singular_landmarks
+  returned_components: coverage_preserving_outer_numerical_set_within_registered_domain
+  raw_exact_boundary_claim: false
+  convex_hull: summary_only
+  hull_inflation: mandatory
+  empty_set_supported: true
+  full_registered_domain_supported: true
+  disconnected_components_supported: true
+  isolated_certified_landmark_supported: true
+  unbounded_set_supported: false
+  domain_truncated_status_mandatory: true
+transformed_density_singularity:
+  mathematical_status: pointwise_density_singularity_on_a_finite_candidate_landmark_set
+  implementation_rule: include_candidate_conservatively_for_both_tie_modes
+  orbit_probability_claim_at_singular_point: false
+  coverage_effect: set_enlargement_only
+  warning_required: true
+independent_grid_audit:
+  points: 4096
+  construction: midpoint_grid_offset_from_primary_certification_grid
+  accepted_point_false_negatives_allowed: false
+  false_positive_points_allowed_only_inside_boundary_brackets: true
+size8_stress:
+  fixture: G8_GAUSS_INTERIOR
+  full_inversion: false
+  candidate_points:
+    - domain_lower
+    - domain_center
+    - stored_truth_post_inversion_audit
+    - stored_truth_plus_0.75_post_inversion_audit
+    - domain_upper
+topology_validation:
+  required_fixtures:
+    - continuous_open_interval
+    - disconnected_two_interval
+    - empty_set
+    - certified_isolated_point
+    - closed_step_discontinuity
+  analytic_or_bruteforce_reference_required: true
+  component_count_required: true
+  boundary_bracket_required: true
+  openness_closedness_required: true
+  accepted_point_false_negatives_allowed: false

@@ -1,0 +1,12 @@
+GeoDose Stage4 — Full Controlled Production + F06 + Ablation/Efficiency
+
+1. Use only this v1.0 package.
+2. Extract All to D:\GeoDose_Stage4_Production_F06_Ablation_Efficiency_v1_0.
+3. Open the inner project folder and double-click RUN_STAGE4.bat.
+4. The run is intentionally long: 3000 main production + 600 F06 + 590 registered stress case-replications.
+5. It saves one atomic checkpoint after every case-replication. If interrupted, run RUN_STAGE4.bat again; it resumes completed work.
+6. Do NOT use --overwrite unless you intentionally want to erase all Stage4 checkpoints and restart.
+7. A successful run creates GeoDose_Stage4_PRODUCTION_F06_ABLATION_EFFICIENCY_OUTPUTS.zip.
+8. Send that ZIP back for independent review.
+9. Do NOT start MineDoseBench until the Windows Stage4 output is accepted.
+10. Never retune the frozen Stage3F thresholds from Stage4 production outcomes.

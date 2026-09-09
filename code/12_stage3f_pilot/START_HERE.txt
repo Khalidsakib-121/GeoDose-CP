@@ -1,0 +1,7 @@
+1. Use only this Stage3F v1.0 package.
+2. Extract All to D:\GeoDose_Stage3F_Pilot_S1_S10_20Rep_Threshold_Freeze_v1_0.
+3. Open the inner project folder.
+4. Double-click RUN_STAGE3F.bat.
+5. Let all five stages finish. The pilot has 400 case-replications and may take several minutes.
+6. Send GeoDose_Stage3F_PILOT_S1_S10_20REP_THRESHOLD_FREEZE_OUTPUTS.zip back to ChatGPT.
+7. Do NOT start production until the Stage3F output is independently accepted.

@@ -1,0 +1,32 @@
+{
+  "stage3a_output_zip": [
+    "D:\\GeoDose_Stage3A_Registry_Generator_v1_3_1_FREEZE\\GeoDose_Stage3A_Registry_Generator_v1_3_1_FREEZE\\GeoDose_Stage3A_OUTPUTS.zip"
+  ],
+  "stage3b_output_zip": [
+    "D:\\GeoDose_Stage3B_Controlled_Generator_v1_2_FREEZE\\GeoDose_Stage3B_Controlled_Generator_v1_2_FREEZE\\GeoDose_Stage3B_OUTPUTS.zip"
+  ],
+  "stage3c_output_zip": [
+    "D:\\GeoDose_Stage3C_v1_1\\GeoDose_Stage3C_Reference_Baselines_v1_1_FREEZE\\GeoDose_Stage3C_REFERENCE_OUTPUTS.zip"
+  ],
+  "stage3c_source_root": [
+    "D:\\GeoDose_Stage3C_v1_1\\GeoDose_Stage3C_Reference_Baselines_v1_1_FREEZE"
+  ],
+  "stage3d_d1_output_zip": [
+    "D:\\GeoDose_Stage3D_D1_v1_1\\GeoDose_Stage3D_D0_D1_ExactOrbit_Algebra_v1_1_FREEZE\\GeoDose_Stage3D_D1_OUTPUTS.zip",
+    "D:\\GeoDose_Stage3D_D1_v1_1\\GeoDose_Stage3D_D0_D1_ExactOrbit_Algebra_v1_1_FREEZE\\GeoDose_Stage3D_D1_OUTPUTS_ACCEPTED.zip"
+  ],
+  "stage3d_d2_output_zip": [
+    "D:\\GeoDose_Stage3D_D2_G3_Candidate_Inversion_v1_2_FREEZE\\GeoDose_Stage3D_D2_G3_Candidate_Inversion_v1_2_FREEZE\\GeoDose_Stage3D_D2_OUTPUTS.zip"
+  ],
+  "stage3d_d2_source_root": [
+    "D:\\GeoDose_Stage3D_D2_G3_Candidate_Inversion_v1_2_FREEZE\\GeoDose_Stage3D_D2_G3_Candidate_Inversion_v1_2_FREEZE"
+  ],
+  "stage3d_d3_m3_output_zip": [
+    "D:\\GeoDose_Stage3D_D3_M3_Oracle_v1_0\\GeoDose_Stage3D_D3_M3_Oracle_v1_0\\GeoDose_Stage3D_D3_M3_ORACLE_OUTPUTS.zip",
+    "D:\\GeoDose_Stage3D_D3_M3_Oracle_v1_0\\GeoDose_Stage3D_D3_M3_ORACLE_OUTPUTS.zip"
+  ],
+  "stage3d_d3_m4_output_zip": [
+    "D:\\GeoDose_Stage3D_D3_M4_Oracle_Structural_Gate_v1_0\\GeoDose_Stage3D_D3_M4_Oracle_Structural_Gate_v1_0\\GeoDose_Stage3D_D3_M4_ORACLE_OUTPUTS.zip",
+    "D:\\GeoDose_Stage3D_D3_M4_Oracle_Structural_Gate_v1_0\\GeoDose_Stage3D_D3_M4_ORACLE_OUTPUTS.zip"
+  ]
+}

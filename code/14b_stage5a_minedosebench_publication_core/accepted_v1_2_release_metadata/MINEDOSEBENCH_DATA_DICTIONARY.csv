@@ -1,0 +1,16 @@
+file,field,description
+minedosebench_substrate_90m.gpkg,benchmark_role,Frozen information role: nuisance/support/calibration/test/buffer/secondary/ineligible
+minedosebench_substrate_90m.gpkg,benchmark_baseline_eligible,Pretreatment DEA/context eligibility before injected treatment/outcome
+minedosebench_scenario_registry.csv,case_id,Versioned MineDoseBench case identifier
+minedosebench_seed_registry.csv,*_seed,Frozen reproducibility seed; repeated only for intentional common-random groups
+minedosebench_primary_target_registry.csv,target_block_id,Pre-outcome target identity frozen before Stage5B performance
+minedosebench_exact_audit_target_registry.csv,exact_audit_target_block_id,Pre-outcome exact-size6 audit target when locally available
+minedosebench_validation_public_units_rep1.csv.gz,A,"Injected continuous/mixed treatment on [0,1]"
+minedosebench_validation_public_units_rep1.csv.gz,Y_observed_at_A,Injected observed satellite-product outcome at factual A
+minedosebench_validation_oracle_truth_rep1.csv.gz,g_*,Oracle mixed treatment-law parameters; benchmark truth only
+minedosebench_validation_oracle_truth_rep1.csv.gz,Y_true_at_A,Latent error-free fractional-cover-change truth
+minedosebench_validation_oracle_truth_rep1.csv.gz,residual_truth,Shared spatial residual truth
+minedosebench_validation_targets_rep1.csv,Y_true_A_star,Localized stochastic potential-outcome truth for selected target
+minedosebench_validation_hard_dose_truth_rep1.csv,Y_true_hard_dose,Hard-dose latent truth on seven-dose grid; interpretation is separate from localized target
+minedosebench_real_context_covariates.csv,context fields,Frozen area-weighted climate/soil/terrain extraction used by benchmark
+minedosebench_target_design_ratio_oracle_90m.csv,target_design_ratio_truth,Mine-stratified finite-frame N2/N3 target-design ratio; E_obs[r|mine]=1; distinct from q_h/g

@@ -1,0 +1,49 @@
+stage: Stage3D_D4
+release_scope: source_level_M6_new_data_candidate_adapter_plus_treatment_graph_nuisance_integration
+script_version: 1.1.0-stage3d-d4
+alpha: 0.10
+candidate_test_values: [-1.0, 0.0, 1.0]
+exact_block_maximum: 8
+primary_exact_block_size: 6
+oracle_outcome_transform: true
+outcome_scale: 1.0
+residual_scale: 0.35
+nuisance_variants:
+  - OT_TG
+  - ET_TG
+  - OT_FG
+  - ET_FG
+nuisance_semantics:
+  OT: accepted_Stage3B_oracle_mixed_treatment_law
+  ET: frozen_Stage3C_MixedPropensityModel_fitted_on_nuisance_training_only
+  TG: accepted_Stage3B_true_graph
+  FG: accepted_Stage3B_fitted_edge_set_with_graph_degrees_recomputed_from_that_edge_set
+  spatial_rho_scale_under_FG: oracle_registered_rho_and_scale_retained_to_isolate_graph_structure_misspecification
+  outcome_mean_scale: accepted_Stage3B_oracle_generator_truth_retained_for_D4_wiring_isolation
+M3:
+  treatment_transport_used: false
+  target_design_ratio_used: false
+M4:
+  definition: one_normalization_of_dose_ratio_times_M3_target_source_residual_marginal
+  target_design_ratio_used: false
+M6:
+  source: verified_local_D2_source_API_only
+  reimplement_G1_G2_G3: false
+  candidate_level_new_data_engine: true
+  full_new_data_numerical_set_inversion: false
+  pilot_scale_ready: false
+claim_boundary:
+  repeated_coverage_claim: false
+  estimated_nuisance_exact_coverage_claim: false
+  publication_performance_evidence: false
+  pilot_run: false
+  production_run: false
+  N2_N3_implemented: false
+  R3_status: DEFERRED_STAGE3E
+software_gate_regressions:
+  accepted_d2_primary_replay: G6_GAUSS_INTERIOR_y_minus8_0_plus8
+  accepted_d2_duplicate_replay: G6_GAUSS_DUPLICATE_y0_expected_360_states
+  expected_fail_closed_refusals:
+    - ST1_INTERIOR_ONLY_endpoint0_not_audited
+    - S4_RHO040_deliberately_disconnected_block
+scenario_label_equality_claims: prohibited_without_sufficient_factorization_and_score_compatibility

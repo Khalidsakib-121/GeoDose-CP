@@ -1,0 +1,36 @@
+fixtures:
+  - evaluation_id: G6_GAUSS_INTERIOR_TRUTH
+    fixture_source: size6_unique
+    case_id: S4_RHO060
+    target_dose: 0.9
+    candidate_rule: stored_simulation_truth
+  - evaluation_id: G6_GAUSS_INTERIOR_SHIFTED
+    fixture_source: size6_unique
+    case_id: S4_RHO060
+    target_dose: 0.9
+    candidate_rule: stored_simulation_truth_plus_0.75
+  - evaluation_id: G8_GAUSS_INTERIOR_TRUTH
+    fixture_source: size8_unique
+    case_id: S4_RHO060
+    target_dose: 0.9
+    candidate_rule: stored_simulation_truth
+  - evaluation_id: G6_GAUSS_DUPLICATE_TRUTH
+    fixture_source: size6_one_duplicate_pair
+    case_id: S4_RHO060
+    target_dose: 0.9
+    candidate_rule: stored_simulation_truth
+  - evaluation_id: G6_GAUSS_ENDPOINT0
+    fixture_source: size6_unique_derived
+    case_id: S4_RHO060
+    target_dose: 0.0
+    candidate_rule: stored_simulation_truth
+  - evaluation_id: G6_GAUSS_ENDPOINT1
+    fixture_source: size6_unique_derived
+    case_id: S4_RHO060
+    target_dose: 1.0
+    candidate_rule: stored_simulation_truth
+  - evaluation_id: G6_NONGAUSSIAN_INTERIOR_TRUTH
+    fixture_source: size6_unique_derived
+    case_id: S4_RHO060_NONGAUSSIAN
+    target_dose: 0.9
+    candidate_rule: stored_simulation_truth

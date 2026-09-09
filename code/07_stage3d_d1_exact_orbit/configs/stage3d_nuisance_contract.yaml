@@ -1,0 +1,20 @@
+D1_regime: oracle_generator_truth_algebra_only
+purpose: validate_G1_G2_algebra_without_conflating_nuisance_estimation
+outcome_model:
+  source: accepted_Stage3B_true_conditional_mean
+  fitted_on_calibration: false
+scale_model:
+  source: accepted_Stage3B_oracle_unit_scale
+  value: 1.0
+treatment_likelihood:
+  source: accepted_Stage3B_oracle_mixed_law
+  estimated_likelihood_claim: false
+spatial_law:
+  graph: accepted_Stage3B_true_graph
+  precision_parameters: accepted_Stage3B_registered_generator_values
+boundary_residuals:
+  source: accepted_Stage3B_oracle_residuals_for_algebra_audit
+finite_sample_claim_boundary:
+  known_law_exact_G2_algebra_only: true
+  estimated_nuisance_exact_coverage: false
+  nuisance_certificates: deferred

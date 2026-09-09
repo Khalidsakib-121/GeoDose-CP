@@ -1,0 +1,34 @@
+{
+  "authority": "Frozen Stage2B v1.2.0-local-stac code defaults and README",
+  "stage2b_script_sha256": "4a3e9fa163280f4ef3f481eb73bcbd54ea5f24202eb5d6fb8111a16a82b4a85d",
+  "stac_url": "https://explorer.dea.ga.gov.au/stac",
+  "search_method": "GET",
+  "search_spatial_filter": "bbox",
+  "access_method": "DEA Explorer STAC API GET/bbox search plus unsigned public AWS S3 COG streaming",
+  "years": [
+    2023,
+    2024,
+    2025
+  ],
+  "output_crs": "EPSG:9473",
+  "resolution_m": 30.0,
+  "resampling": "nearest",
+  "fractional_cover": {
+    "product_id": "ga_ls_fc_3",
+    "measurements": [
+      "pv",
+      "ue"
+    ],
+    "persistent_id": "https://pid.geoscience.gov.au/dataset/ga/145498",
+    "knowledge_hub": "https://knowledge.dea.ga.gov.au/data/product/dea-fractional-cover-landsat/"
+  },
+  "water_observations": {
+    "product_id": "ga_ls_wo_3",
+    "measurement": "water",
+    "doi": "https://doi.org/10.26186/146257",
+    "knowledge_hub": "https://knowledge.dea.ga.gov.au/data/product/dea-water-observations-landsat/"
+  },
+  "water_mask_rule": "WOfS dry=True equivalent: water bitfield exactly 0",
+  "annual_composite": "per-pixel temporal median across accepted clear-dry solar-day observations, then block spatial median",
+  "selection_uses_pv_outcome": false
+}

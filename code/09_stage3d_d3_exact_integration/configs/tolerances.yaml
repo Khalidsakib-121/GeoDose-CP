@@ -1,0 +1,8 @@
+probability_sum_abs: 1.0e-10
+pvalue_abs: 2.0e-12
+source_marginal_abs: 2.0e-12
+baseline_quantile_abs: 2.0e-12
+baseline_center_abs: 2.0e-12
+reduction_abs: 2.0e-12
+manifest_hash_exact: true
+minimum_s4_candidate_count: 2000

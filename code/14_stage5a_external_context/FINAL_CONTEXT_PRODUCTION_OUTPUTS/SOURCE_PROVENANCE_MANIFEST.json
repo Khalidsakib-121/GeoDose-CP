@@ -1,0 +1,712 @@
+{
+  "base_acquisition_aggregate_sha256": "7a99a75d2958f2bbff6fa5f91c2108d881d0a42295090a2cfadabb29e562b181",
+  "credential_values_recorded": false,
+  "frozen_valid_area_threshold": 0.99,
+  "generated_utc": "2026-08-10T15:23:34Z",
+  "local_source_hash_validation_passed": true,
+  "production_stage": "GeoDose-CP Stage5A External Context Production",
+  "production_version": "1.0.1-stage5a-external-context-production-freeze-candidate",
+  "source_policy": "EXACT_CENSUS_BYTES_ONLY_NO_NETWORK_DRIFT",
+  "source_rows": [
+    {
+      "days_required": 365,
+      "derived_aoi_raster": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\silo\\annual_aoi\\2023.daily_rain.annual_sum_aoi.tif",
+      "derived_aoi_sha256": "3ffb6f8885e56f4551f040e39007b3c79386c134998e97a3695157c5ac7c7152",
+      "full_source_file": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\silo\\netcdf\\2023.daily_rain.nc",
+      "full_source_sha256": "ea3d87257b632649479b45676f8183b95b41bd6ab496eda0cd8aba8ed6a4c492",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "content_length": 418145109,
+        "content_type": "application/x-netcdf",
+        "etag": "\"0b00c0ceec3145ae193292bfd433c6e7-50\"",
+        "last_modified": "Tue, 14 Apr 2026 11:13:22 GMT",
+        "remote_total_length": 418145109,
+        "status_code": 200,
+        "url": "https://s3-ap-southeast-2.amazonaws.com/silo-open-data/Official/annual/daily_rain/2023.daily_rain.nc"
+      },
+      "remote_url": "https://s3-ap-southeast-2.amazonaws.com/silo-open-data/Official/annual/daily_rain/2023.daily_rain.nc",
+      "source_family": "SILO",
+      "source_id": "SILO_daily_rain_2023",
+      "temporal_aggregation": "annual sum only where all daily grids are finite",
+      "variable": "daily_rain",
+      "year": 2023
+    },
+    {
+      "days_required": 366,
+      "derived_aoi_raster": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\silo\\annual_aoi\\2024.daily_rain.annual_sum_aoi.tif",
+      "derived_aoi_sha256": "b565558d87ef2607f4690c4dcab5813f214317d4ab207fcd1ce2049521a52ae5",
+      "full_source_file": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\silo\\netcdf\\2024.daily_rain.nc",
+      "full_source_sha256": "e4da4dca048e913738e0d172d15c370a3875ba9c9c90e93cd22a37622b4ac9ce",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "content_length": 419290551,
+        "content_type": "application/x-netcdf",
+        "etag": "\"7426e28b5ed1cb37e36f0aa9720d5bd6-50\"",
+        "last_modified": "Tue, 14 Apr 2026 11:13:22 GMT",
+        "remote_total_length": 419290551,
+        "status_code": 200,
+        "url": "https://s3-ap-southeast-2.amazonaws.com/silo-open-data/Official/annual/daily_rain/2024.daily_rain.nc"
+      },
+      "remote_url": "https://s3-ap-southeast-2.amazonaws.com/silo-open-data/Official/annual/daily_rain/2024.daily_rain.nc",
+      "source_family": "SILO",
+      "source_id": "SILO_daily_rain_2024",
+      "temporal_aggregation": "annual sum only where all daily grids are finite",
+      "variable": "daily_rain",
+      "year": 2024
+    },
+    {
+      "days_required": 365,
+      "derived_aoi_raster": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\silo\\annual_aoi\\2023.et_short_crop.annual_sum_aoi.tif",
+      "derived_aoi_sha256": "c559ed9c0560c57f00fd90289b31fb268609f0c2184d88d8f10f8445a671e30f",
+      "full_source_file": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\silo\\netcdf\\2023.et_short_crop.nc",
+      "full_source_sha256": "9ecb321d70fbbb41c7674a8bd78631832fbc5cf04a9170ad08b1ce59c3d16990",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "content_length": 418145185,
+        "content_type": "application/x-netcdf",
+        "etag": "\"a56b65e5236d2dd47f485202544645f2-50\"",
+        "last_modified": "Mon, 01 Apr 2024 19:50:33 GMT",
+        "remote_total_length": 418145185,
+        "status_code": 200,
+        "url": "https://s3-ap-southeast-2.amazonaws.com/silo-open-data/Official/annual/et_short_crop/2023.et_short_crop.nc"
+      },
+      "remote_url": "https://s3-ap-southeast-2.amazonaws.com/silo-open-data/Official/annual/et_short_crop/2023.et_short_crop.nc",
+      "source_family": "SILO",
+      "source_id": "SILO_et_short_crop_2023",
+      "temporal_aggregation": "annual sum only where all daily grids are finite",
+      "variable": "et_short_crop",
+      "year": 2023
+    },
+    {
+      "days_required": 366,
+      "derived_aoi_raster": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\silo\\annual_aoi\\2024.et_short_crop.annual_sum_aoi.tif",
+      "derived_aoi_sha256": "2b2d33d46dc1138da347763c7889f35918fe93c5fd0e3f324a280052c741ddd0",
+      "full_source_file": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\silo\\netcdf\\2024.et_short_crop.nc",
+      "full_source_sha256": "17258b3364091a35963626d5138d67ddfa1853a978c9c8e015c215a0a480ff96",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "content_length": 419290627,
+        "content_type": "application/x-netcdf",
+        "etag": "\"a1e7de47113a9ca332be8b26a5402238-50\"",
+        "last_modified": "Tue, 01 Apr 2025 14:54:05 GMT",
+        "remote_total_length": 419290627,
+        "status_code": 200,
+        "url": "https://s3-ap-southeast-2.amazonaws.com/silo-open-data/Official/annual/et_short_crop/2024.et_short_crop.nc"
+      },
+      "remote_url": "https://s3-ap-southeast-2.amazonaws.com/silo-open-data/Official/annual/et_short_crop/2024.et_short_crop.nc",
+      "source_family": "SILO",
+      "source_id": "SILO_et_short_crop_2024",
+      "temporal_aggregation": "annual sum only where all daily grids are finite",
+      "variable": "et_short_crop",
+      "year": 2024
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\SOC_000_005_EV_N_P_AU_TRN_N_20220727.tif",
+      "aoi_crop_sha256": "893e5bdc51a21f13f7542f1596d41bee7bc6c7331a1b085d5d994fa12da3f246",
+      "citation": "Wadoux, A., Dobarco, M., Malone, B., Minasny, B., McBratney, A. & Searle, R. (2024). Soil and Landscape Grid National Soil Attribute Maps - Organic Carbon (3\" resolution) - Release 2. Version 2.0. TERN. https://doi.org/10.25919/ejhm-c070",
+      "credential_recorded": false,
+      "depth_cm": "000_005",
+      "metadata_identity": {
+        "asset": "SOC_000_005_EV_N_P_AU_TRN_N_20220727.tif",
+        "component": "Estimated Value",
+        "declared_units": "Percent",
+        "depth": "000 - 005 cm",
+        "id": "SOC_000_005_EV_N_P_AU_TRN_N_20220727",
+        "raster_data_type": "float32",
+        "raster_stats": {
+          "maximum": 17.72,
+          "mean": 1.099,
+          "minimum": 0.01,
+          "stddev": 1.119
+        },
+        "soil_property": "Organic Carbon"
+      },
+      "metadata_sha256": "a0c1fa49fed48d06fa3fa26a1b6271a28f19b0d1aa213bead70bef3b562b6c3c",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "SOC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/SOC/90m/v2/SOC_000_005_EV_N_P_AU_TRN_N_20220727.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 1378917689,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "5cb93256137c2aa4c2826d71656566ef",
+        "last_modified": "Thu, 12 Sep 2024 00:19:49 GMT",
+        "remote_total_length": 1378917689,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/SOC/90m/v2/SOC_000_005_EV_N_P_AU_TRN_N_20220727.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/SOC/90m/v2/SOC_000_005_EV_N_P_AU_TRN_N_20220727.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "SOC_000_005_EV_N_P_AU_TRN_N_20220727",
+      "unit_contract": "percent"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\SOC_005_015_EV_N_P_AU_TRN_N_20220727.tif",
+      "aoi_crop_sha256": "30fabe5e0452f8d591d61fcd6cedef682f47d29a84b82a21cb66513328e04f4e",
+      "citation": "Wadoux, A., Dobarco, M., Malone, B., Minasny, B., McBratney, A. & Searle, R. (2024). Soil and Landscape Grid National Soil Attribute Maps - Organic Carbon (3\" resolution) - Release 2. Version 2.0. TERN. https://doi.org/10.25919/ejhm-c070",
+      "credential_recorded": false,
+      "depth_cm": "005_015",
+      "metadata_identity": {
+        "asset": "SOC_005_015_EV_N_P_AU_TRN_N_20220727.tif",
+        "component": "Estimated Value",
+        "declared_units": "Percent",
+        "depth": "005 - 015 cm",
+        "id": "SOC_005_015_EV_N_P_AU_TRN_N_20220727",
+        "raster_data_type": "float32",
+        "raster_stats": {
+          "maximum": 19.7,
+          "mean": 0.914,
+          "minimum": 0.01,
+          "stddev": 0.89
+        },
+        "soil_property": "Organic Carbon"
+      },
+      "metadata_sha256": "9b58d0cd74a4b3c69ef3dfbe8c6b6d8463df996c13244116125ee32b0f3e2d15",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "SOC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/SOC/90m/v2/SOC_005_015_EV_N_P_AU_TRN_N_20220727.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 1335208717,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "74d324189214bcddc81f2a87e3beeafe",
+        "last_modified": "Thu, 12 Sep 2024 00:20:49 GMT",
+        "remote_total_length": 1335208717,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/SOC/90m/v2/SOC_005_015_EV_N_P_AU_TRN_N_20220727.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/SOC/90m/v2/SOC_005_015_EV_N_P_AU_TRN_N_20220727.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "SOC_005_015_EV_N_P_AU_TRN_N_20220727",
+      "unit_contract": "percent"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\CLY_000_005_EV_N_P_AU_TRN_N_20210902.tif",
+      "aoi_crop_sha256": "4dcc03e8d28ed496cc1c8300e7f43e556235b55847d55e26706e9a1ea36f360b",
+      "citation": "Malone, B. & Searle, R. (2022). Soil and Landscape Grid National Soil Attribute Maps - Clay (3\" resolution) - Release 2. Version 2. TERN. https://doi.org/10.25919/hc4s-3130",
+      "credential_recorded": false,
+      "depth_cm": "000_005",
+      "metadata_identity": {
+        "asset": "CLY_000_005_EV_N_P_AU_TRN_N_20210902.tif",
+        "component": "Estimated Value",
+        "declared_units": "Percent",
+        "depth": "000 - 005 cm",
+        "id": "CLY_000_005_EV_N_P_AU_TRN_N_20210902",
+        "raster_data_type": "float32",
+        "raster_stats": {
+          "maximum": 72.0,
+          "mean": 15.892,
+          "minimum": 1.0,
+          "stddev": 9.314
+        },
+        "soil_property": "Clay"
+      },
+      "metadata_sha256": "5497eb09d2b20b74f1e4dcb9e1e3d5c8661c354ed0d1908af209e873d2f5b331",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "CLY",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/CLY/v2/CLY_000_005_EV_N_P_AU_TRN_N_20210902.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 651065186,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "59ee6c5da919995e8cdeee5528306e35",
+        "last_modified": "Tue, 30 Jul 2024 08:06:27 GMT",
+        "remote_total_length": 651065186,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/CLY/v2/CLY_000_005_EV_N_P_AU_TRN_N_20210902.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/CLY/v2/CLY_000_005_EV_N_P_AU_TRN_N_20210902.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "CLY_000_005_EV_N_P_AU_TRN_N_20210902",
+      "unit_contract": "percent"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\CLY_005_015_EV_N_P_AU_TRN_N_20210902.tif",
+      "aoi_crop_sha256": "ea2b83d4b7fceb849817e35dbef5f5e1c3b086839af4eef1a7c6bcf861fdcb78",
+      "citation": "Malone, B. & Searle, R. (2022). Soil and Landscape Grid National Soil Attribute Maps - Clay (3\" resolution) - Release 2. Version 2. TERN. https://doi.org/10.25919/hc4s-3130",
+      "credential_recorded": false,
+      "depth_cm": "005_015",
+      "metadata_identity": {
+        "asset": "CLY_005_015_EV_N_P_AU_TRN_N_20210902.tif",
+        "component": "Estimated Value",
+        "declared_units": "Percent",
+        "depth": "005 - 015 cm",
+        "id": "CLY_005_015_EV_N_P_AU_TRN_N_20210902",
+        "raster_data_type": "float32",
+        "raster_stats": {
+          "maximum": 74.0,
+          "mean": 17.293,
+          "minimum": 1.0,
+          "stddev": 9.777
+        },
+        "soil_property": "Clay"
+      },
+      "metadata_sha256": "3148575cdcaf911483530217acf5dfe4ce13a28ecd4e0865a5b29ba6ff8c789a",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "CLY",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/CLY/v2/CLY_005_015_EV_N_P_AU_TRN_N_20210902.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 683824020,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "d4f2d0109dd0ccd6532ba751f560ad0d",
+        "last_modified": "Tue, 30 Jul 2024 08:06:55 GMT",
+        "remote_total_length": 683824020,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/CLY/v2/CLY_005_015_EV_N_P_AU_TRN_N_20210902.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/CLY/v2/CLY_005_015_EV_N_P_AU_TRN_N_20210902.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "CLY_005_015_EV_N_P_AU_TRN_N_20210902",
+      "unit_contract": "percent"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\BDW_000_005_EV_N_P_AU_TRN_N_20230607.tif",
+      "aoi_crop_sha256": "06f2afba5015a4b79c311dae7706ec6833e934b87f1683e38646409def30844d",
+      "citation": "Malone, B. (2023). Soil and Landscape Grid National Soil Attribute Maps - Bulk Density - Whole Earth - Release 2. Version 2. TERN. https://doi.org/10.25919/gxyn-pd07",
+      "credential_recorded": false,
+      "depth_cm": "000_005",
+      "metadata_identity": {
+        "asset": "BDW_000_005_EV_N_P_AU_TRN_N_20230607.tif",
+        "component": "Estimated Value",
+        "declared_units": "Percent",
+        "depth": "000 - 005 cm",
+        "id": "BDW_000_005_EV_N_P_AU_TRN_N_20230607",
+        "raster_data_type": "float32",
+        "raster_stats": {
+          "maximum": 1.85,
+          "mean": 1.448,
+          "minimum": 0.22,
+          "stddev": 0.115
+        },
+        "soil_property": "Bulk Density - Whole Earth"
+      },
+      "metadata_sha256": "92d940adbcd1d201e3749a814eb5966294e213ef96756fcc28acde0458d2beea",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "BDW",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/BDW/v2/BDW_000_005_EV_N_P_AU_TRN_N_20230607.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 1626552057,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "1001d695f9fb0d9ebeac3900849a8b8d",
+        "last_modified": "Tue, 30 Jul 2024 07:57:05 GMT",
+        "remote_total_length": 1626552057,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/BDW/v2/BDW_000_005_EV_N_P_AU_TRN_N_20230607.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/BDW/v2/BDW_000_005_EV_N_P_AU_TRN_N_20230607.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "BDW_000_005_EV_N_P_AU_TRN_N_20230607",
+      "unit_contract": "g/cm3"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\BDW_005_015_EV_N_P_AU_TRN_N_20230607.tif",
+      "aoi_crop_sha256": "18eb12091556cfb8cc9a1b5460c50685f187869edd5843531898a2155382bb6d",
+      "citation": "Malone, B. (2023). Soil and Landscape Grid National Soil Attribute Maps - Bulk Density - Whole Earth - Release 2. Version 2. TERN. https://doi.org/10.25919/gxyn-pd07",
+      "credential_recorded": false,
+      "depth_cm": "005_015",
+      "metadata_identity": {
+        "asset": "BDW_005_015_EV_N_P_AU_TRN_N_20230607.tif",
+        "component": "Estimated Value",
+        "declared_units": "Percent",
+        "depth": "005 - 015 cm",
+        "id": "BDW_005_015_EV_N_P_AU_TRN_N_20230607",
+        "raster_data_type": "float32",
+        "raster_stats": {
+          "maximum": 1.87,
+          "mean": 1.464,
+          "minimum": 0.22,
+          "stddev": 0.108
+        },
+        "soil_property": "Bulk Density - Whole Earth"
+      },
+      "metadata_sha256": "1790527ae989aac86907629a66e66f72e54dbdb73b5bbb3acd7eb9dcb0240793",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "BDW",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/BDW/v2/BDW_005_015_EV_N_P_AU_TRN_N_20230607.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 1648250595,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "6e265cabfdd7f3e5d85e63827d741eba",
+        "last_modified": "Tue, 30 Jul 2024 07:55:12 GMT",
+        "remote_total_length": 1648250595,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/BDW/v2/BDW_005_015_EV_N_P_AU_TRN_N_20230607.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/BDW/v2/BDW_005_015_EV_N_P_AU_TRN_N_20230607.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "BDW_005_015_EV_N_P_AU_TRN_N_20230607",
+      "unit_contract": "g/cm3"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\PHC_000_005_EV_N_P_AU_NAT_C_20210913.tif",
+      "aoi_crop_sha256": "21b419353131a48990e5be92674cd375abace27d071f4e6095ad26f72974a03b",
+      "citation": "Malone, B. & Searle, R. (2024). Soil and Landscape Grid National Soil Attribute Maps - pH - Calcium Chloride (3\" resolution) - Release 2. Version 2. TERN. https://doi.org/10.25919/7320-hw30",
+      "credential_recorded": false,
+      "depth_cm": "000_005",
+      "metadata_identity": {
+        "asset": "PHC_000_005_EV_N_P_AU_NAT_C_20210913.tif",
+        "component": "Estimated Value",
+        "declared_units": "",
+        "depth": "000 - 005 cm",
+        "id": "PHC_000_005_EV_N_P_AU_NAT_C_20210913",
+        "raster_data_type": "float32",
+        "raster_stats": {
+          "maximum": 8.14,
+          "mean": 5.802,
+          "minimum": 3.42,
+          "stddev": 0.72
+        },
+        "soil_property": "pH - CaCl2"
+      },
+      "metadata_sha256": "3fe00284324e7081f6effe120bfb1c3622ffaaecc393970eb446f03445573c26",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "PHC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/pHc/v2/PHC_000_005_EV_N_P_AU_NAT_C_20210913.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 1090486411,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "0b307fd9e0a3cf5de6ea5387c15b0370",
+        "last_modified": "Wed, 11 Sep 2024 01:15:24 GMT",
+        "remote_total_length": 1090486411,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/pHc/v2/PHC_000_005_EV_N_P_AU_NAT_C_20210913.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/pHc/v2/PHC_000_005_EV_N_P_AU_NAT_C_20210913.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "PHC_000_005_EV_N_P_AU_NAT_C_20210913",
+      "unit_contract": "pH"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\PHC_005_015_EV_N_P_AU_NAT_C_20210913.tif",
+      "aoi_crop_sha256": "3e11f1c854d163ea84788eefaf28c4f175281bf64d52b2397b8ac5d178d3e0d2",
+      "citation": "Malone, B. & Searle, R. (2024). Soil and Landscape Grid National Soil Attribute Maps - pH - Calcium Chloride (3\" resolution) - Release 2. Version 2. TERN. https://doi.org/10.25919/7320-hw30",
+      "credential_recorded": false,
+      "depth_cm": "005_015",
+      "metadata_identity": {
+        "asset": "PHC_005_015_EV_N_P_AU_NAT_C_20210913.tif",
+        "component": "Estimated Value",
+        "declared_units": "",
+        "depth": "005 - 015 cm",
+        "id": "PHC_005_015_EV_N_P_AU_NAT_C_20210913",
+        "raster_data_type": "float32",
+        "raster_stats": {
+          "maximum": 8.18,
+          "mean": 5.857,
+          "minimum": 3.54,
+          "stddev": 0.734
+        },
+        "soil_property": "pH - CaCl2"
+      },
+      "metadata_sha256": "9fd9ce063defcb8d303898f3d4ce9e37f896cf0cb132463cd6dacb3a3ade9e5d",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "PHC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/pHc/v2/PHC_005_015_EV_N_P_AU_NAT_C_20210913.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 1079289472,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "13a2a56975d3ea4aa56273dc86f37bb6",
+        "last_modified": "Wed, 11 Sep 2024 01:15:37 GMT",
+        "remote_total_length": 1079289472,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/pHc/v2/PHC_005_015_EV_N_P_AU_NAT_C_20210913.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/pHc/v2/PHC_005_015_EV_N_P_AU_NAT_C_20210913.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "PHC_005_015_EV_N_P_AU_NAT_C_20210913",
+      "unit_contract": "pH"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\AWC_000_005_EV_N_P_AU_TRN_N_20210614.tif",
+      "aoi_crop_sha256": "78e7f31f353a6fbd3fbb3728be9d0c9857473482a9cdc866ea67ea7744098a96",
+      "citation": "Searle, R., Nimalka Somarathna, P. & Malone, B. (2023). Soil and Landscape Grid National Soil Attribute Maps - Available Volumetric Water Capacity (Percent) (3 arc second resolution) Version 2. Version 2.0. TERN. https://doi.org/10.25919/4jwj-na34",
+      "credential_recorded": false,
+      "depth_cm": "000_005",
+      "metadata_identity": {
+        "asset": "AWC_000_005_EV_N_P_AU_TRN_N_20210614.tif",
+        "component": "Estimated Value",
+        "declared_units": "",
+        "depth": "000 - 005 cm",
+        "id": "AWC_000_005_EV_N_P_AU_TRN_N_20210614",
+        "raster_data_type": "uint16",
+        "raster_stats": {
+          "maximum": 30.0,
+          "mean": 13.525,
+          "minimum": 5.0,
+          "stddev": 1.101
+        },
+        "soil_property": "Available Water Capacity"
+      },
+      "metadata_sha256": "5d1fc8e927c72974dcee0ba9359f66414a25b461b83ce2be42cd17d697cf7114",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "AWC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_000_005_EV_N_P_AU_TRN_N_20210614.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 321059513,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "6ec09fab9dd76179520e87337ea60215",
+        "last_modified": "Tue, 30 Jul 2024 07:52:59 GMT",
+        "remote_total_length": 321059513,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_000_005_EV_N_P_AU_TRN_N_20210614.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_000_005_EV_N_P_AU_TRN_N_20210614.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "AWC_000_005_EV_N_P_AU_TRN_N_20210614",
+      "unit_contract": "percent volumetric water capacity"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\AWC_005_015_EV_N_P_AU_TRN_N_20210614.tif",
+      "aoi_crop_sha256": "8a7c2fb17998a6f7b63040fc010b9dd50a7bfd7e0a9100afdac6219fdb495985",
+      "citation": "Searle, R., Nimalka Somarathna, P. & Malone, B. (2023). Soil and Landscape Grid National Soil Attribute Maps - Available Volumetric Water Capacity (Percent) (3 arc second resolution) Version 2. Version 2.0. TERN. https://doi.org/10.25919/4jwj-na34",
+      "credential_recorded": false,
+      "depth_cm": "005_015",
+      "metadata_identity": {
+        "asset": "AWC_005_015_EV_N_P_AU_TRN_N_20210614.tif",
+        "component": "Estimated Value",
+        "declared_units": "",
+        "depth": "005 - 015 cm",
+        "id": "AWC_005_015_EV_N_P_AU_TRN_N_20210614",
+        "raster_data_type": "uint16",
+        "raster_stats": {
+          "maximum": 35.0,
+          "mean": 13.21,
+          "minimum": 5.0,
+          "stddev": 0.94
+        },
+        "soil_property": "Available Water Capacity"
+      },
+      "metadata_sha256": "84a13759f623dca0d84dcfa1e0c336fd75019656d57454ff76ab7735f21daac7",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "AWC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_005_015_EV_N_P_AU_TRN_N_20210614.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 306197198,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "a3e2396b209ca7a57917113b0d3cb877",
+        "last_modified": "Tue, 30 Jul 2024 07:53:16 GMT",
+        "remote_total_length": 306197198,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_005_015_EV_N_P_AU_TRN_N_20210614.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_005_015_EV_N_P_AU_TRN_N_20210614.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "AWC_005_015_EV_N_P_AU_TRN_N_20210614",
+      "unit_contract": "percent volumetric water capacity"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\AWC_015_030_EV_N_P_AU_TRN_N_20210614.tif",
+      "aoi_crop_sha256": "107ac5e26724bb13e0f2786dc7bafee594b82741b15bd054f9adb5927a941d19",
+      "citation": "Searle, R., Nimalka Somarathna, P. & Malone, B. (2023). Soil and Landscape Grid National Soil Attribute Maps - Available Volumetric Water Capacity (Percent) (3 arc second resolution) Version 2. Version 2.0. TERN. https://doi.org/10.25919/4jwj-na34",
+      "credential_recorded": false,
+      "depth_cm": "015_030",
+      "metadata_identity": {
+        "asset": "AWC_015_030_EV_N_P_AU_TRN_N_20210614.tif",
+        "component": "Estimated Value",
+        "declared_units": "",
+        "depth": "015 - 030 cm",
+        "id": "AWC_015_030_EV_N_P_AU_TRN_N_20210614",
+        "raster_data_type": "uint16",
+        "raster_stats": {
+          "maximum": 31.0,
+          "mean": 12.274,
+          "minimum": 1.0,
+          "stddev": 0.956
+        },
+        "soil_property": "Available Water Capacity"
+      },
+      "metadata_sha256": "cd5060a34aa84fae9863b00875e2442a7e0977e7da500b2e5a31e130a5122dce",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "AWC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_015_030_EV_N_P_AU_TRN_N_20210614.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 312965966,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "5a8cc62240591d845f62f37af3ed28e7",
+        "last_modified": "Tue, 30 Jul 2024 07:51:48 GMT",
+        "remote_total_length": 312965966,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_015_030_EV_N_P_AU_TRN_N_20210614.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_015_030_EV_N_P_AU_TRN_N_20210614.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "AWC_015_030_EV_N_P_AU_TRN_N_20210614",
+      "unit_contract": "percent volumetric water capacity"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\AWC_030_060_EV_N_P_AU_TRN_N_20210614.tif",
+      "aoi_crop_sha256": "cb4e8ff4ae8ef5645fa16584e23ebdd67de144770c7c5d84fbaa166c1ad511ea",
+      "citation": "Searle, R., Nimalka Somarathna, P. & Malone, B. (2023). Soil and Landscape Grid National Soil Attribute Maps - Available Volumetric Water Capacity (Percent) (3 arc second resolution) Version 2. Version 2.0. TERN. https://doi.org/10.25919/4jwj-na34",
+      "credential_recorded": false,
+      "depth_cm": "030_060",
+      "metadata_identity": {
+        "asset": "AWC_030_060_EV_N_P_AU_TRN_N_20210614.tif",
+        "component": "Estimated Value",
+        "declared_units": "",
+        "depth": "030 - 060 cm",
+        "id": "AWC_030_060_EV_N_P_AU_TRN_N_20210614",
+        "raster_data_type": "uint16",
+        "raster_stats": {
+          "maximum": 36.0,
+          "mean": 11.371,
+          "minimum": 3.0,
+          "stddev": 1.055
+        },
+        "soil_property": "Available Water Capacity"
+      },
+      "metadata_sha256": "24e797556dac38936a06105d1663a0df89acc332ccf28d1ac836e8c390b65bf9",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "AWC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_030_060_EV_N_P_AU_TRN_N_20210614.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 317592254,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "4aa84d630c19abc8282903bc1f5b8fb8",
+        "last_modified": "Tue, 30 Jul 2024 07:54:42 GMT",
+        "remote_total_length": 317592254,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_030_060_EV_N_P_AU_TRN_N_20210614.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_030_060_EV_N_P_AU_TRN_N_20210614.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "AWC_030_060_EV_N_P_AU_TRN_N_20210614",
+      "unit_contract": "percent volumetric water capacity"
+    },
+    {
+      "aoi_crop": "D:\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\GeoDose_Stage5A_External_Context_Acquisition_v1_0_1_FREEZE\\CONTEXT_SOURCE_CACHE\\tern\\aoi_crops\\AWC_060_100_EV_N_P_AU_TRN_N_20210614.tif",
+      "aoi_crop_sha256": "ada695a8d462b1d8518b6e76014b84711764b54aa0d82e4aec371b6ab0c7c44f",
+      "citation": "Searle, R., Nimalka Somarathna, P. & Malone, B. (2023). Soil and Landscape Grid National Soil Attribute Maps - Available Volumetric Water Capacity (Percent) (3 arc second resolution) Version 2. Version 2.0. TERN. https://doi.org/10.25919/4jwj-na34",
+      "credential_recorded": false,
+      "depth_cm": "060_100",
+      "metadata_identity": {
+        "asset": "AWC_060_100_EV_N_P_AU_TRN_N_20210614.tif",
+        "component": "Estimated Value",
+        "declared_units": "",
+        "depth": "060 - 100 cm",
+        "id": "AWC_060_100_EV_N_P_AU_TRN_N_20210614",
+        "raster_data_type": "uint16",
+        "raster_stats": {
+          "maximum": 27.0,
+          "mean": 10.516,
+          "minimum": 0.0,
+          "stddev": 1.229
+        },
+        "soil_property": "Available Water Capacity"
+      },
+      "metadata_sha256": "2443cf974003da04e17dae4a667c49023ff02405a88a835642b07c629a050504",
+      "processing": "raw estimated-value COG cells cropped without resampling or scale/offset transformation",
+      "product_id": "AWC",
+      "remote_cog_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_060_100_EV_N_P_AU_TRN_N_20210614.tif",
+      "remote_headers": {
+        "accept_ranges": "bytes",
+        "authentication": "x-api-key",
+        "content_length": 322247283,
+        "content_type": "image/tiff",
+        "credential_recorded": false,
+        "etag": "2609b5365b727c0e848e269c6f06d0cb",
+        "last_modified": "Tue, 30 Jul 2024 07:54:18 GMT",
+        "remote_total_length": 322247283,
+        "status_code": 200,
+        "url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_060_100_EV_N_P_AU_TRN_N_20210614.tif"
+      },
+      "remote_metadata_url": "https://data.tern.org.au/model-derived/slga/NationalMaps/SoilAndLandscapeGrid/AWC/v2/AWC_060_100_EV_N_P_AU_TRN_N_20210614.json",
+      "source_family": "TERN_SLGA_R2",
+      "source_id": "AWC_060_100_EV_N_P_AU_TRN_N_20210614",
+      "unit_contract": "percent volumetric water capacity"
+    },
+    {
+      "aoi_crop_sha256": "b78984ebe96b59fa7dcdc05ca99e6d422c10ca1b19a55c1cdaf1b4a371627a69",
+      "citation": "Digital Elevation Model (DEM) of Australia with 1 Second Grid, 2024 service",
+      "coverage_identifier": "1",
+      "coverage_selection_evidence": {
+        "all_offerings": [
+          {
+            "description": "",
+            "label": "DEM SRTM 1Second",
+            "name": "1"
+          }
+        ],
+        "offering": {
+          "description": "",
+          "label": "DEM SRTM 1Second",
+          "name": "1"
+        },
+        "selection_basis": "WCS label/description identifies DEM+SRTM and REST layer identity is exact"
+      },
+      "dataset_pid": "https://pid.geoscience.gov.au/dataset/ga/72759",
+      "getcoverage_params": {
+        "bbox": "150.78460625247155,-32.7708437517797,151.1706953852273,-32.24849510475331",
+        "coverage": "1",
+        "crs": "EPSG:4326",
+        "format": "GeoTIFF",
+        "request": "GetCoverage",
+        "response_crs": "EPSG:4326",
+        "resx": "0.0002777777777777778",
+        "resy": "0.0002777777777777778",
+        "service": "WCS",
+        "version": "1.0.0"
+      },
+      "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+      "mode": "official_WCS",
+      "rest_service_identity_sha256": "3f5f3b267cf5be54c36f4c1631cc33d522f36fe5e81c613292f005de5707801e",
+      "service_rest": "https://services.ga.gov.au/gis/rest/services/DEM_SRTM_1Second_2024/MapServer",
+      "source_family": "Geoscience_Australia",
+      "source_id": "GA_DEM_SRTM_1Second_2024",
+      "wcs": "https://services.ga.gov.au/gis/services/DEM_SRTM_1Second_2024/MapServer/WCSServer",
+      "wcs_capabilities_sha256": "1ccf58706a460181e8722f5d2bbd9f7cb822536ca3c2a1d7c0b95830d0b52ade"
+    },
+    {
+      "details": {
+        "aspect_algorithm": "Compass downslope aspect clockwise from north from Horn gradient; area-weighted circular mean over pixels with slope >=0.1 deg; all-flat/undefined convention = 0 deg",
+        "derived_sha256": {
+          "terrain_aspect_deg.tif": "4db4282eabfaca4d581e67d031b39ad73ae2007ea0e6c3b1e347e15eb4d0a7ac",
+          "terrain_elevation_epsg9473_30m.tif": "7a0455b35a41e5e121069231652a2af2f3ef4456375559b00003a107456e3f5b",
+          "terrain_roughness_3x3_std_m.tif": "59223adb794c07854f3ab51d14aeb6bede50d2d6f9da7d1e90bef2142f92ca41",
+          "terrain_slope_deg.tif": "f78d3bb3dd0314873916613df0d1fb0627f964b1e1e57d5b40b1c12e1e72deb6"
+        },
+        "projected_crs": "EPSG:9473",
+        "raw_dem_sha256": "b78984ebe96b59fa7dcdc05ca99e6d422c10ca1b19a55c1cdaf1b4a371627a69",
+        "reprojection": "bilinear",
+        "resolution_m": 30.0,
+        "roughness_algorithm": "Population standard deviation of elevations in a centered 3x3 (90 m x 90 m nominal) DEM window; then area-weighted to block",
+        "slope_algorithm": "Horn 3x3 finite-difference gradient on bilinearly reprojected DEM in EPSG:9473"
+      },
+      "source_family": "Geoscience_Australia",
+      "source_id": "GA_TERRAIN_DERIVED"
+    }
+  ],
+  "support_census_output_aggregate_sha256": "053e09d0ab54fad015c5c2787029ff8bbb1b28195b31115f7ae76cfe6cd68177",
+  "support_census_zip_sha256": "2facc83842bd2ec8e30a2763c7040cb5a6e7446a0292d52d1eff0a1ea9c5152e"
+}

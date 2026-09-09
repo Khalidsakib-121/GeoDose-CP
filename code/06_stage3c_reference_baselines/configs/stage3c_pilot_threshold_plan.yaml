@@ -1,0 +1,8 @@
+status: deferred_not_selected_in_reference
+selection_stage: Stage3C twenty-replication pilot
+candidate_grids_frozen_before_pilot:
+  minimum_ess: [3, 5, 10, 15, 20]
+  maximum_normalized_weight: [0.10, 0.15, 0.20, 0.30, 0.50]
+  minimum_graph_safe_count: [5, 10, 15, 20]
+selection_rule: select from controlled pilot evidence using the preregistered coverage/refusal criterion; never use NSW outcomes
+reference_behavior: report diagnostics and mathematically required infinite intervals; do not tune or enforce operational thresholds

@@ -1,0 +1,262 @@
+[
+  {
+    "check": "required_files",
+    "detail": "[]",
+    "pass": true
+  },
+  {
+    "check": "context_rows_23618",
+    "detail": "23618",
+    "pass": true
+  },
+  {
+    "check": "context_unique_ids",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "context_exact_frozen_ids",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "excluded_none_in_context",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "frozen_registry_exact",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "exclusion_registry_exact",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "partition_exact",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "context_columns_exact",
+    "detail": "['block_id', 'rainfall_2023_mm', 'rainfall_2024_mm', 'et_short_crop_2023_mm', 'et_short_crop_2024_mm', 'soil_organic_carbon_pct_0_15cm', 'soil_ph_cacl2_0_15cm', 'soil_clay_pct_0_15cm', 'soil_bulk_density_g_cm3_0_15cm', 'soil_available_water_capacity_mm_0_100cm', 'terrain_elevation_m', 'terrain_slope_deg', 'terrain_aspect_deg', 'terrain_roughness']",
+    "pass": true
+  },
+  {
+    "check": "all_context_finite",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "range_rainfall_2023_mm",
+    "detail": "421.5..562.4000244140625",
+    "pass": true
+  },
+  {
+    "check": "range_rainfall_2024_mm",
+    "detail": "448.2999877929688..734.2000122070312",
+    "pass": true
+  },
+  {
+    "check": "range_et_short_crop_2023_mm",
+    "detail": "1370.204782493042..1435.300048828125",
+    "pass": true
+  },
+  {
+    "check": "range_et_short_crop_2024_mm",
+    "detail": "1271.660092229484..1314.0",
+    "pass": true
+  },
+  {
+    "check": "range_soil_organic_carbon_pct_0_15cm",
+    "detail": "0.986196486925596..2.811127830227833",
+    "pass": true
+  },
+  {
+    "check": "range_soil_ph_cacl2_0_15cm",
+    "detail": "4.316095690831306..6.250056630626407",
+    "pass": true
+  },
+  {
+    "check": "range_soil_clay_pct_0_15cm",
+    "detail": "14.820043312843104..46.922465282230085",
+    "pass": true
+  },
+  {
+    "check": "range_soil_bulk_density_g_cm3_0_15cm",
+    "detail": "1.237987024714997..1.4281376170551143",
+    "pass": true
+  },
+  {
+    "check": "range_soil_available_water_capacity_mm_0_100cm",
+    "detail": "96.86466314826254..139.29669264137394",
+    "pass": true
+  },
+  {
+    "check": "range_terrain_elevation_m",
+    "detail": "-28.58500395880805..351.4507649739583",
+    "pass": true
+  },
+  {
+    "check": "range_terrain_slope_deg",
+    "detail": "0.3994253815876113..21.13947211371528",
+    "pass": true
+  },
+  {
+    "check": "range_terrain_aspect_deg",
+    "detail": "0.0074437321481468..359.9971016512665",
+    "pass": true
+  },
+  {
+    "check": "range_terrain_roughness",
+    "detail": "0.2576215407914585..9.50781668557061",
+    "pass": true
+  },
+  {
+    "check": "valid_area_rows",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "valid_area_exact_ids",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "valid_area_18_layers",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "valid_area_threshold_exact",
+    "detail": "0.993802177913525",
+    "pass": true
+  },
+  {
+    "check": "reconciliation_18",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "reconciliation_pass",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "reconciliation_tight",
+    "detail": "1.1102230246251563e-16",
+    "pass": true
+  },
+  {
+    "check": "raw_soil_rows",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "formula_five",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "formula_pass",
+    "detail": "0.0",
+    "pass": true
+  },
+  {
+    "check": "attrition_counts",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "attrition_by_mine_total",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "attrition_liddell_89",
+    "detail": "{'Bulga Complex': 3, 'Hunter Valley Operations': 0, 'Liddell Coal': 89, 'Mount Thorley Warkworth Complex': 0, 'Mt Arthur Coal': 0}",
+    "pass": true
+  },
+  {
+    "check": "attrition_bulga_3",
+    "detail": "{'Bulga Complex': 3, 'Hunter Valley Operations': 0, 'Liddell Coal': 89, 'Mount Thorley Warkworth Complex': 0, 'Mt Arthur Coal': 0}",
+    "pass": true
+  },
+  {
+    "check": "attrition_other_mines_zero",
+    "detail": "{'Bulga Complex': 3, 'Hunter Valley Operations': 0, 'Liddell Coal': 89, 'Mount Thorley Warkworth Complex': 0, 'Mt Arthur Coal': 0}",
+    "pass": true
+  },
+  {
+    "check": "metadata_complete",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "metadata_area_weighted",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "metadata_substrate_counts",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "metadata_threshold_unchanged",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "metadata_no_imputation",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "provenance_base",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "provenance_census",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "provenance_no_credentials",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "provenance_locked_bytes",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "claim_boundary",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "no_outcome_method_artifacts",
+    "detail": "['context_attrition_audit.json', 'context_attrition_by_mine.csv', 'context_attrition_failure_patterns.csv', 'context_attrition_preoutcome_spatial_audit.csv', 'context_derivation_formula_audit.csv', 'context_metadata.json', 'context_production_report.json', 'context_range_qa.csv', 'context_range_summary_by_mine.csv', 'context_support_reconciliation.csv', 'context_valid_area_qa.csv.gz', 'frozen_context_complete_substrate.csv', 'frozen_context_support_exclusions.csv', 'frozen_source_layer_support_summary.csv', 'geodose_stage5a_context_source_snapshot.zip', 'mine_context_covariates.csv', 'soil_depth_component_audit.csv.gz', 'source_provenance_manifest.json']",
+    "pass": true
+  },
+  {
+    "check": "handoff_exists",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "source_snapshot_nonempty",
+    "detail": "",
+    "pass": true
+  },
+  {
+    "check": "snapshot_manifest_present",
+    "detail": "",
+    "pass": true
+  }
+]

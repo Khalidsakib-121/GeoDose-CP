@@ -1,0 +1,68 @@
+stage: 3D
+release_scope: D2_G3_candidate_inversion_reference_domain_truncated_outer
+script_version: 1.2.0-stage3d-d2-freeze
+canonical_sources:
+  - Unified math.docx
+  - Concise math.docx
+  - proposal.docx
+accepted_upstream:
+  D0_D1_source_sha256: 02c02203ced6d0a0bbc4b141084e128cc939096d93164393f1591582355fa7df
+  D1_output_sha256: 2b58cbe85fa177d23181d37a4f40764868a86edf12c9114a77a69a9c2b9b9df4
+primary_theorem_chain:
+  - G1_candidate_specific_distinct_quotient_orbit
+  - G2_graph_local_target_orbit_probability
+  - G3_weighted_candidate_inversion
+score:
+  name: absolute_frozen_residual_at_fixed_target_slot
+  expression: S_pi_y = abs(E_target_slot_pi_y)
+  frozen_before_calibration: true
+observed_assignment:
+  assignment: identity_fixed_slot_assignment
+  state_index: 0
+candidate_p_values:
+  conservative_primary: certified_strict_greater_mass + ambiguous_mass + structural_tie_mass
+  randomized_certified: certified_strict_greater_mass + ambiguous_mass + U * structural_tie_mass
+  structural_tie_certificate: identical_numeric_A_Y_payload_at_fixed_target_slot
+  ambiguous_mass_rule: included_in_full_to_prevent_tolerance_induced_anti_conservatism
+  exact_randomized_claim: only_when_ambiguous_mass_is_zero
+  one_uniform_per_fixture_held_fixed_across_all_candidate_y: true
+  pointwise_prediction_rule: "C_alpha = {y : p_y > alpha}"
+numerical_inversion:
+  latent_outcome_support: unbounded
+  registered_domain: [-8.0, 8.0]
+  returned_object: coverage_preserving_outer_numerical_approximation_of_C_alpha_intersection_registered_domain
+  unbounded_claim: prohibited
+  boundary_rule: rejected_side_open_outer_endpoint
+  exact_boundary_claim: prohibited_except_certified_exact_landmarks
+  domain_truncation_reported: true
+implemented:
+  - fixed_a_priori_domain_without_outcome_leakage
+  - candidate_specific_quotient_orbit_after_response_replacement
+  - exact_G2_probability_recomputation_for_each_candidate
+  - absolute_residual_score_recomputation_for_each_orbit_state
+  - conservative_upper_tail_p_value
+  - certified_randomized_tie_p_value_with_ambiguous_mass_included
+  - coarse_staggered_and_primary_certification_grid
+  - score_tie_collision_and_transform_landmarks
+  - deterministic_outer_boundary_refinement
+  - finite_domain_outer_component_extraction
+  - open_closed_endpoint_provenance
+  - convex_hull_and_hull_inflation_report
+  - independent_offset_grid_false_negative_audit
+  - end_to_end_known_topology_validation
+  - size8_candidate_p_value_stress_audit
+  - measure_zero_transformed_density_singularity_conservative_inclusion
+not_implemented:
+  - full_real_line_prediction_set
+  - repeated_replication_coverage_claim
+  - final_M3_spatial_only_generalized_conformal
+  - final_M4_naive_product
+  - exact_M6_comparison_campaign
+  - estimated_nuisance_exact_coverage
+  - scalable_N2_N3_certification
+  - production_or_MineDoseBench_inference
+claim_boundary:
+  D2_is_software_and_numerical_inversion_validation_only: true
+  one_replication_truth_membership_is_not_coverage_evidence: true
+  returned_components_are_outer_domain_truncated_numerical_sets: true
+  transformed_density_singular_points_are_conservatively_included_without_claiming_a_pointwise_orbit_pmf: true

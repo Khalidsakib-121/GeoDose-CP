@@ -1,0 +1,15 @@
+float_dtype: float64
+input_probability_sum_abs_tolerance: 5.0e-12
+p_value_mass_sum_abs_tolerance: 5.0e-12
+score_tie_abs_tolerance: 1.0e-12
+score_tie_rel_tolerance: 1.0e-12
+minimum_precision_eigenvalue: 1.0e-10
+non_gaussian_min_abs_residual: 1.0e-14
+boundary_absolute_tolerance: 1.0e-6
+boundary_relative_tolerance: 1.0e-5
+boundary_maximum_depth: 40
+independent_grid_points: 4096
+outer_false_positive_boundary_multiplier: 2.0
+candidate_probability_replay_abs_tolerance: 2.0e-12
+d1_nonsingular_probability_match_abs_tolerance: 2.0e-12
+size8_maximum_states: 40320

@@ -1,0 +1,164 @@
+stage: Stage4_Production_F06_Ablation_Efficiency
+version: 1.0.0-stage4-production-freeze
+alpha: 0.1
+seed_phase_required: production_provisional
+pilot_seed_rows_forbidden_for_scientific_production: true
+production_main_rows_expected: 3000
+primary_scalable_neighborhood_size: 64
+minimum_precision_eigenvalue: 1.0e-10
+frozen_stage3f_thresholds:
+  minimum_ess: 3.0
+  maximum_normalized_weight: 0.5
+  minimum_graph_safe_count: 20
+  n3_nonvacuity_rule: finite_coverage_lower_bound_strictly_greater_than_0
+  stage3f_output_sha256: f1069a23c37d2b9a2e0acea90d6593a6a549a5c495655aa489b7cd9c1610f79d
+threshold_retuning_allowed: false
+nsw_tuning_allowed: false
+main_production_allocation:
+  - {case_id: S1_BASE, scenario_id: S1, seed_rep_start: 1, seed_rep_end: 300}
+  - {case_id: S2_SPATIAL, scenario_id: S2, seed_rep_start: 1, seed_rep_end: 300}
+  - {case_id: S3_SHIFT, scenario_id: S3, seed_rep_start: 1, seed_rep_end: 300}
+  - {case_id: S4_RHO000, scenario_id: S4, seed_rep_start: 1, seed_rep_end: 100}
+  - {case_id: S4_RHO020, scenario_id: S4, seed_rep_start: 101, seed_rep_end: 200}
+  - {case_id: S4_RHO040, scenario_id: S4, seed_rep_start: 201, seed_rep_end: 300}
+  - {case_id: S4_RHO060, scenario_id: S4, seed_rep_start: 301, seed_rep_end: 400}
+  - {case_id: S4_RHO080, scenario_id: S4, seed_rep_start: 401, seed_rep_end: 500}
+  - {case_id: S5_POOR_OVERLAP, scenario_id: S5, seed_rep_start: 1, seed_rep_end: 300}
+  - {case_id: S6_ROOK, scenario_id: S6, seed_rep_start: 1, seed_rep_end: 150}
+  - {case_id: S6_OMIT50, scenario_id: S6, seed_rep_start: 151, seed_rep_end: 300}
+  - {case_id: S7_EXCHANGEABLE, scenario_id: S7, seed_rep_start: 1, seed_rep_end: 300}
+  - {case_id: S8_SEVERE_TAIL, scenario_id: S8, seed_rep_start: 1, seed_rep_end: 150}
+  - {case_id: S8_SMALL_CAL, scenario_id: S8, seed_rep_start: 151, seed_rep_end: 300}
+  - {case_id: S9_RANDOM, scenario_id: S9, seed_rep_start: 1, seed_rep_end: 50}
+  - {case_id: S9_TREATMENT05, scenario_id: S9, seed_rep_start: 51, seed_rep_end: 100}
+  - {case_id: S9_TREATMENT10, scenario_id: S9, seed_rep_start: 101, seed_rep_end: 150}
+  - {case_id: S9_SUBSTRATE, scenario_id: S9, seed_rep_start: 151, seed_rep_end: 200}
+  - {case_id: S10_90M, scenario_id: S10, seed_rep_start: 1, seed_rep_end: 100}
+  - {case_id: S10_180M, scenario_id: S10, seed_rep_start: 101, seed_rep_end: 200}
+f06_freeze:
+  status: PROSPECTIVELY_FROZEN_BEFORE_PRODUCTION_OUTCOMES
+  experiment_type: fixed_resolution_increasing_domain_sample_size_sensitivity
+  resolution_m: 90
+  adjacency: queen
+  boundary: nonperiodic
+  vary_only: lattice_extent_and_sample_size
+  levels:
+    small:
+      rows: 17
+      cols: 17
+      n: 289
+      full_geographic_queen_edges: 1056
+      role_cut_dgp_edges: 958
+      role_columns: {nuisance_training: 7, support_audit: 3, calibration: 3, test_target: 4}
+      cut_after_cols: [6, 9]
+    primary:
+      rows: 25
+      cols: 25
+      n: 625
+      full_geographic_queen_edges: 2352
+      role_cut_dgp_edges: 2206
+      role_columns: {nuisance_training: 10, support_audit: 5, calibration: 5, test_target: 5}
+      cut_after_cols: [9, 14]
+    large:
+      rows: 35
+      cols: 35
+      n: 1225
+      full_geographic_queen_edges: 4692
+      role_cut_dgp_edges: 4486
+      role_columns: {nuisance_training: 14, support_audit: 7, calibration: 7, test_target: 7}
+      cut_after_cols: [13, 20]
+  frozen_unchanged:
+    - mixed_treatment_law
+    - potential_outcome_DGP
+    - residual_law_and_scenario_spatial_rho
+    - treatment_intervention_transport_q_over_g
+    - target_design_transport_definition
+    - target_population_rule
+    - intervention_kernel_and_endpoint_atoms
+    - measurement_error_mechanisms
+    - operational_thresholds
+  representative_case_ids: [S1_BASE, S4_RHO060, S5_POOR_OVERLAP]
+  replications_per_nonprimary_level_per_case: 100
+  primary_comparator_source: corresponding_main_production_case_first_100_case_local_rows_with_matching_Stage3A_seed_replication_window
+  scientific_claim: sample_size_sensitivity_not_resolution_or_MAUP_sensitivity
+  random_stream_pairing: same_Stage3A_master_replication_window_by_case_but_distinct_F06_derived_common_random_group_substreams; no_strict_nested_CRN_claim
+extensions:
+  - {extension_id: EXT_S4_NONGAUSSIAN, case_id: S4_RHO060_NONGAUSSIAN, seed_rep_start: 1, seed_rep_end: 100, method_evaluation: true, theorem_status: diagnostic_nonGaussian_scalable_stress}
+  - {extension_id: EXT_S4_DESIGN_SHIFT, case_id: S4_RHO060_DESIGN_SHIFT, seed_rep_start: 1, seed_rep_end: 100, method_evaluation: true, theorem_status: target_design_shift_diagnostic_N2_weighting_only_no_new_finite_sample_nuisance_claim}
+  - {extension_id: EXT_S9_COMBINED, case_id: S9_COMBINED05, seed_rep_start: 1, seed_rep_end: 50, method_evaluation: true, theorem_status: measurement_error_diagnostic}
+  - {extension_id: EXT_ST1_ATOM0, case_id: ST1_MIXED_ATOMS, target_dose_override: 0.0, seed_rep_start: 1, seed_rep_end: 50, method_evaluation: true, theorem_status: endpoint_atom_stress}
+  - {extension_id: EXT_ST1_ATOM1, case_id: ST1_MIXED_ATOMS, target_dose_override: 1.0, seed_rep_start: 51, seed_rep_end: 100, method_evaluation: true, theorem_status: endpoint_atom_stress}
+  - {extension_id: EXT_ST1_UNAUDITED0, case_id: ST1_INTERIOR_ONLY, target_dose_override: 0.0, seed_rep_start: 1, seed_rep_end: 20, method_evaluation: true, expected_structural_refusal: R02_ENDPOINT_NOT_AUDITED, theorem_status: expected_refusal_negative_control}
+  - {extension_id: EXT_ST1_UNAUDITED1, case_id: ST1_INTERIOR_ONLY, target_dose_override: 1.0, seed_rep_start: 21, seed_rep_end: 40, method_evaluation: true, expected_structural_refusal: R02_ENDPOINT_NOT_AUDITED, theorem_status: expected_refusal_negative_control}
+  - {extension_id: EXT_ST2_TEMPORAL, case_id: ST2_TEMPORAL, seed_rep_start: 1, seed_rep_end: 100, method_evaluation: false, theorem_status: structural_temporal_diagnostic_no_rowwise_conformal_claim}
+  - {extension_id: EXT_ST3_HIDDEN_C2, case_id: ST3_HIDDEN_C2, seed_rep_start: 1, seed_rep_end: 100, method_evaluation: true, theorem_status: causal_identification_negative_control_not_conformal_validity_failure_claim}
+tracks:
+  main:
+    - ORACLE_STRUCTURAL_OT_TG
+    - RF_SHARED_PREDICTOR_EMPIRICAL
+  xgb_scenarios: [S1, S4, S5, S8]
+  xgb_track: XGB_SHARED_PREDICTOR_EMPIRICAL
+  extension_default: [ORACLE_STRUCTURAL_OT_TG]
+  f06: [ORACLE_STRUCTURAL_OT_TG]
+  theorem_certified_primary: ORACLE_STRUCTURAL_OT_TG
+  empirical_tracks_theorem_certified: false
+heuristics:
+  H1_geographic_distance_bandwidth: 0.25
+  H4_definition: treatment_logweight_plus_H1_geographic_logweight
+  theorem_eligible: false
+ablation_mapping:
+  ABL0: M6_full
+  ABL1: M3_without_treatment_correction_identity_target_design_branch
+  ABL2: target_design_N2_certificate_ratio_set_to_one_vs_oracle_ratio; prediction_pvalues_unchanged_in_exact_local_D4_adapter
+  ABL3: M2_without_spatial_law
+  ABL4: M4_naive_product
+  ABL5: M2_algebraic_coincidence_under_identity_target_design_branch
+  ABL6: M6_raw_before_operational_eligibility_refusal_vs_frozen_gated_M6
+  ABL7: H1_and_H4_geographic_distance_heuristics
+  ABL8: estimated_or_misspecified_treatment_nuisance_diagnostic_vs_oracle_treatment
+  ABL9: S6_RF_true_graph_counterfactual_vs_registered_fitted_graph_diagnostic
+nuisance_diagnostic:
+  representative_cases: [S1_BASE, S2_SPATIAL, S3_SHIFT, S4_RHO060, S5_POOR_OVERLAP, S6_OMIT50, S7_EXCHANGEABLE, S8_SEVERE_TAIL, S9_TREATMENT10, S10_90M]
+  first_n_case_seed_reps: 10
+  modes: [estimated, misspecified]
+  theorem_certified: false
+width_efficiency:
+  primary_comparison: M6_vs_M5
+  hero_case_ids: [S4_RHO000, S4_RHO020, S4_RHO040, S4_RHO060, S4_RHO080]
+  fixed_case_local_rep_indices: [1,2,3,4,5,6,7,8,9,10]
+  matched_coverage_absolute_tolerance: 0.03
+  candidate_domain: [-8.0, 8.0]
+  m6_representation: accepted_D2_G3_coverage_preserving_outer_numerical_set_intersect_registered_domain
+  m5_comparison: interval_intersection_with_same_registered_domain
+  full_real_line_width_claim_allowed: false
+  if_m6_touches_domain_boundary: report_domain_truncation_and_do_not_claim_full_line_efficiency
+  independent_grid_audit_each_production_query: false
+coverage_confirmation:
+  familywise_alpha: 0.05
+  minimum_returned_for_test: 20
+  use_exact_binomial_lower_tail: true
+  tested_track: ORACLE_STRUCTURAL_OT_TG
+  tested_method: M6
+  independent_of_threshold_tuning: true
+hero_s4:
+  coverage_uses_all_100_main_production_rows_per_rho: true
+  width_uses_fixed_first_10_case_local_rows_per_rho: true
+  plot_input_generated_not_plot_image: true
+checkpointing:
+  enabled: true
+  atomic_unit: one_case_replication
+  format: gzip_json
+  resume_default: true
+  checkpoint_hash_must_match_contract_and_source: true
+  output_zip_excludes_checkpoints: true
+claims:
+  production_performance_evidence: true
+  thresholds_frozen_before_production: true
+  no_rethresholding_from_production: true
+  no_nsw_tuning: true
+  oracle_structural_m6_theorem_certified_for_registered_identity_target_design_Gaussian_route: true
+  estimated_nuisance_finite_sample_certified: false
+  design_shift_estimated_ratio_finite_sample_certified: false
+  ST2_method_level_temporal_conformal_validity_claim: false
+  ST3_is_causal_identification_negative_control: true
+  m6_full_real_line_width_claim: false

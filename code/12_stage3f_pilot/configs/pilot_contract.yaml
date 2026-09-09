@@ -1,0 +1,187 @@
+stage: Stage3F_Pilot_S1_S10_20Rep_Threshold_Freeze
+version: 1.0.0-stage3f-pilot-freeze
+alpha: 0.1
+replications: 20
+seed_phase_required: pilot
+production_seed_rows_forbidden: true
+primary_scalable_neighborhood_size: 64
+target_population_selection:
+  population: uniform_over_theorem_eligible_final_test_slots
+  eligibility: connected_size6_block_with_one_test_target_and_five_calibration_slots_under_frozen_true_graph
+  selection_seed_stream: frozen_target_draw_seed_with_STAGE3F_TARGET_SLOT_UNIFORM_scenario_label
+  uses_treatment_A: false
+  uses_outcome_Y: false
+  uses_support_diagnostics: false
+  factor_variant_pairing: same_scenario_and_replication_share_uniform_rank
+residual_scale: 0.35
+minimum_precision_eigenvalue: 1.0e-10
+score_tie_abs_tolerance: 1.0e-12
+score_tie_rel_tolerance: 1.0e-12
+non_gaussian_min_abs_residual: 1.0e-14
+candidate_domain:
+- -8.0
+- 8.0
+width_audit_grid_points: 161
+width_audit_reps:
+- 1
+- 20
+width_audit_case_by_scenario:
+  S1: S1_BASE
+  S2: S2_SPATIAL
+  S3: S3_SHIFT
+  S4: S4_RHO060
+  S5: S5_POOR_OVERLAP
+  S6: S6_OMIT50
+  S7: S7_EXCHANGEABLE
+  S8: S8_SEVERE_TAIL
+  S9: S9_TREATMENT10
+  S10: S10_90M
+xgb_scenarios:
+- S1
+- S4
+- S5
+- S8
+primary_track: RF_SHARED_PREDICTOR_EMPIRICAL
+certified_track: ORACLE_STRUCTURAL_OT_TG
+nuisance_estimation_diagnostic_reps:
+- 1
+- 10
+- 20
+nuisance_estimation_case_by_scenario:
+  S1: S1_BASE
+  S2: S2_SPATIAL
+  S3: S3_SHIFT
+  S4: S4_RHO060
+  S5: S5_POOR_OVERLAP
+  S6: S6_OMIT50
+  S7: S7_EXCHANGEABLE
+  S8: S8_SEVERE_TAIL
+  S9: S9_TREATMENT10
+  S10: S10_90M
+pilot_case_ids:
+- S1_BASE
+- S2_SPATIAL
+- S3_SHIFT
+- S4_RHO000
+- S4_RHO020
+- S4_RHO040
+- S4_RHO060
+- S4_RHO080
+- S5_POOR_OVERLAP
+- S6_ROOK
+- S6_OMIT50
+- S7_EXCHANGEABLE
+- S8_SEVERE_TAIL
+- S8_SMALL_CAL
+- S9_RANDOM
+- S9_TREATMENT05
+- S9_TREATMENT10
+- S9_SUBSTRATE
+- S10_90M
+- S10_180M
+threshold_candidate_grid:
+  minimum_ess:
+  - 3.0
+  - 5.0
+  - 10.0
+  - 15.0
+  - 20.0
+  maximum_normalized_weight:
+  - 0.1
+  - 0.15
+  - 0.2
+  - 0.3
+  - 0.5
+  minimum_graph_safe_count:
+  - 5
+  - 10
+  - 15
+  - 20
+threshold_selection:
+  uses_outcomes: true
+  safe_hard_case_ids:
+  - S1_BASE
+  - S2_SPATIAL
+  - S3_SHIFT
+  - S4_RHO000
+  - S4_RHO020
+  - S4_RHO040
+  - S4_RHO060
+  - S4_RHO080
+  - S6_ROOK
+  - S6_OMIT50
+  - S7_EXCHANGEABLE
+  - S9_RANDOM
+  - S9_TREATMENT05
+  - S9_TREATMENT10
+  - S9_SUBSTRATE
+  - S10_90M
+  sensitivity_not_hard_safe:
+  - S10_180M
+  expected_low_information_case_ids:
+  - S5_POOR_OVERLAP
+  - S8_SEVERE_TAIL
+  - S8_SMALL_CAL
+  objective_order:
+  - minimize_worst_safe_case_penalized_undercoverage_shortfall
+  - minimize_safe_pooled_undercoverage_shortfall
+  - maximize_safe_case_coverage_groups_used
+  - minimize_expected_low_information_return_rate
+  - maximize_safe_retention
+  - maximize_minimum_ess
+  - minimize_maximum_normalized_weight
+  - maximize_minimum_graph_safe_count
+  uses_controlled_pilot_outcomes_only: true
+  selection_track: ORACLE_STRUCTURAL_OT_TG
+  selection_method: M6
+  minimum_returned_per_case_for_casewise_coverage_objective: 10
+  coverage_target: 0.9
+  width_used: false
+  nsw_used: false
+  insufficient_case_return_penalty: 1.0
+  selection_feasibility_rule: no post-hoc hard retention cutoff; casewise validity
+    objective assigns maximal penalty when returned count is below the predeclared
+    minimum_returned_per_case_for_casewise_coverage_objective
+coverage_sanity:
+  familywise_alpha: 0.05
+  minimum_returned_for_test: 10
+  certified_tracks_only: true
+  use_exact_binomial_lower_tail: true
+r11_eo_quality_rule:
+  synthetic_ue_numeric_threshold_frozen: false
+  reason: synthetic_UE_proxy_is_not_a_transferable_real_EO_quality_scale
+  application_gate: reuse_frozen_Stage2B_DEA_product_quality_eligibility_without_outcome_tuning
+claims:
+  pilot_only: true
+  production_performance_evidence: false
+  publication_performance_evidence: false
+  oracle_structural_m6_theorem_certified: true
+  rf_or_xgb_shared_predictor_m6_theorem_certified: false
+  estimated_treatment_m6_theorem_certified: false
+  fitted_graph_m6_theorem_certified: false
+  thresholds_may_use_coverage_or_width: false
+  threshold_selection_uses_only_controlled_pilot_coverage_and_refusal: true
+  nsw_tuning_allowed: false
+  threshold_selection_uses_controlled_pilot_coverage: true
+  threshold_selection_uses_width: false
+dose_grid:
+- 0.0
+- 0.1
+- 0.25
+- 0.5
+- 0.75
+- 0.9
+- 1.0
+threshold_grid_provenance:
+  ess_maxweight_graph: exact accepted Stage3C configs/stage3c_pilot_threshold_plan.yaml
+    candidate grids
+  additional_candidate_grids_added_by_stage3f: false
+  frozen_before_pilot_outcomes: true
+  certificate_nonvacuity: 'fixed structural N3 rule only: finite certified/operational
+    lower bound strictly greater than 0; not pilot-tuned'
+structural_refusal_gates:
+  unsupported_dose: R01_UNSUPPORTED_DOSE
+  endpoint_not_audited: R02_ENDPOINT_NOT_AUDITED
+  target_outside_supported_population: R17_TARGET_UNIT_OUTSIDE_SUPPORTED_POPULATION
+  apply_before_operational_thresholds: true
+  n3_nonvacuous_coverage_lower_bound_strictly_greater_than: 0.0

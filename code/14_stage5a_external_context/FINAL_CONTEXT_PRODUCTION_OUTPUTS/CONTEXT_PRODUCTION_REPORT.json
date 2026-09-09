@@ -1,0 +1,17 @@
+{
+  "M2_M6_results_read": false,
+  "automatic_minedosebench_freeze": false,
+  "benchmark_outcomes_read": false,
+  "frozen_context_complete_blocks": 23618,
+  "frozen_support_exclusions": 92,
+  "frozen_valid_area_threshold": 0.99,
+  "generated_utc": "2026-08-10T15:23:39Z",
+  "imputation_performed": false,
+  "original_required_blocks": 23710,
+  "required_numeric_columns": 13,
+  "source_policy": "EXACT_CENSUS_BYTES_ONLY_NO_NETWORK_DRIFT",
+  "source_snapshot_sha256": "93468aad45ca145fd3a80ee1758685f8877a46a79d6156a4d77e51198e4e3e52",
+  "status": "FINAL_CONTEXT_PRODUCTION_COMPLETE_PENDING_VERIFICATION",
+  "thresholds_retuned": false,
+  "unsupported_blocks_recovered": false
+}

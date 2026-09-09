@@ -1,0 +1,17 @@
+SOFTWARE PATCH v1.0.2 — scientific Stage5B contract remains v1.0.0; unaffected v1.0.0 checkpoints are reusable.
+GeoDose-CP Stage5B MineDoseBench Production Evaluation v1.0.0
+
+1. Preserve the accepted Stage5A files separately. Do not edit them.
+2. Extract THIS ZIP under a SHORT Windows path. Recommended: D:\G5B\
+3. Double-click RUN_STAGE5B_PRODUCTION.bat.
+4. Leave the terminal open. The full 540-task run can take hours.
+5. If interrupted, run the same BAT again. One completed case x replication = one atomic checkpoint.
+6. Do not delete _STAGE5B_WORK. It is the resumability ledger.
+7. Success requires the post-production verifier to pass before the result ZIP is packaged.
+8. After success, STOP. Send:
+   STAGE5B_PRODUCTION_OUTPUTS\GeoDose_Stage5B_MineDoseBench_PRODUCTION_RESULTS.zip
+   STAGE5B_PRODUCTION_POWERSHELL_LOG.txt
+   for independent audit.
+9. Do NOT start the NSW real demonstration before that audit passes.
+
+No internet/data download/API key is used. The exact accepted Stage5A benchmark release and independent audit are embedded and hash-locked.

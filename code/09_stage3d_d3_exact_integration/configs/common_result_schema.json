@@ -1,0 +1,11 @@
+{
+  "required_columns": [
+    "case_id", "fixture_id", "candidate_y", "candidate_hex", "method",
+    "method_role", "representation", "p_value", "lower", "upper", "included",
+    "returned", "refusal_code", "nuisance_variant", "theorem_status",
+    "source_adapter", "alpha", "domain_lower", "domain_upper",
+    "domain_truncated", "publication_evidence"
+  ],
+  "principal_methods": ["M1", "M2", "M3", "M4", "M5", "M6"],
+  "heuristic_ablations": ["H1", "H4"]
+}

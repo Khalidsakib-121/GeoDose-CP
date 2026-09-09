@@ -1,0 +1,15 @@
+{
+  "allowed_preoutcome_audit_fields": [
+    "MineN",
+    "centroid_x_epsg9473",
+    "centroid_y_epsg9473",
+    "centroid_lon_wgs84",
+    "centroid_lat_wgs84"
+  ],
+  "decision_basis": "Prospective external-source support only, before benchmark outcomes or M2-M6 performance; exact >=0.99 rule on all 18 governing layers; no imputation or threshold change.",
+  "excluded_support_gap_blocks": 92,
+  "exclusion_fraction": 0.00388021931674399,
+  "original_required_blocks": 23710,
+  "retained_context_complete_blocks": 23618,
+  "retention_fraction": 0.996119780683256
+}

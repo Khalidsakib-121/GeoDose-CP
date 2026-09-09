@@ -1,0 +1,8 @@
+probability_sum_abs: 5.0e-12
+accepted_d2_pvalue_replay_abs: 2.0e-12
+m3_treatment_invariance_abs: 2.0e-12
+source_marginal_sum_abs: 2.0e-12
+m4_recompute_abs: 2.0e-12
+mixture_probability_sum_abs: 2.0e-10
+candidate_pvalue_bounds_slack: 1.0e-12
+source_marginal_extract_abs: 2.0e-12

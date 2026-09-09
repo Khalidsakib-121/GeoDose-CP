@@ -1,0 +1,41 @@
+{
+  "accepted_stage3f_pilot_math_sha256": "7c05756642ce5b960120af03366fe5363d1d2a09a386f9d8ac1294926d27bf28",
+  "authority": "Accepted/frozen Stage3F operational-gate semantics carried into Stage5B",
+  "method_mapping": {
+    "M2": [
+      "endpoint/support",
+      "ESS",
+      "max_weight"
+    ],
+    "M3": [
+      "endpoint/support",
+      "graph_safe_count"
+    ],
+    "M4": [
+      "endpoint/support",
+      "ESS",
+      "max_weight",
+      "graph_safe_count"
+    ],
+    "M5": [
+      "endpoint/support",
+      "ESS_on_graph_safe_set",
+      "max_weight_on_graph_safe_set",
+      "graph_safe_count"
+    ],
+    "M6": [
+      "endpoint/support",
+      "ESS",
+      "max_weight",
+      "graph_safe_count",
+      "finite_positive_operational_lower_bound"
+    ]
+  },
+  "note": "M3 must not inherit dose-weight ESS/max-weight gates. The M6 lower-bound non-vacuity rule is structural/operational and was not a fourth pilot-tuned threshold.",
+  "thresholds": {
+    "M6_lower_bound": "finite and >0",
+    "maximum_normalized_weight": 0.5,
+    "minimum_ess": 3.0,
+    "minimum_graph_safe_count": 20
+  }
+}

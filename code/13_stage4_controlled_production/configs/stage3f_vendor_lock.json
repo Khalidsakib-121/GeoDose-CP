@@ -1,0 +1,13 @@
+{
+  "files": {
+    "__init__.py": "9340239666129df86379f4ec0398cff69277e4604e10294c0eaf71e1107d5dcc",
+    "bridges.py": "62edee5ba671014f08e844d9af07009b0b8eeb69fd7c15023baa902ae539e54a",
+    "io.py": "9b5b766a1daeb36522dbed1ea89cf3c916843c39a5387128726e346c5ebd2cbb",
+    "pilot_math.py": "7c05756642ce5b960120af03366fe5363d1d2a09a386f9d8ac1294926d27bf28",
+    "provenance.py": "39ee8ea6f9ebe2a38bf296607a3e6f3393ae00e75002e5426640e6e6335bc05c",
+    "runner.py": "8f8615f2d5de68a3cd7ad6173975d0be7d5d669b223cf84f684d15190158c3a3",
+    "version.py": "2a0b6483e5ac37236087bf06f7557df157838b32cbe8c15d6b7a6d41acf6a292"
+  },
+  "origin": "GeoDose_Stage3F_Pilot_S1_S10_20Rep_Threshold_Freeze_v1_0 source package",
+  "origin_source_zip_sha256": "af4ca01aee8ffa25cc3762aaab82337f210fdc0d6fb1518b21b3d5ca8e1664ef"
+}

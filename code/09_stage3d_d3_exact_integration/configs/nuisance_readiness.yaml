@@ -1,0 +1,32 @@
+variants: [OT_TG, ET_TG, OT_FG, ET_FG]
+methods:
+  M1:
+    OT_TG: accepted_stage3c
+    ET_TG: accepted_stage3c
+    OT_FG: accepted_stage3c
+    ET_FG: accepted_stage3c
+  M2:
+    OT_TG: accepted_stage3c
+    ET_TG: accepted_stage3c_computational_only_not_finite_sample_certified
+    OT_FG: accepted_stage3c_graph_not_used
+    ET_FG: accepted_stage3c_computational_only_not_finite_sample_certified
+  M3:
+    OT_TG: accepted_oracle_true_graph
+    ET_TG: treatment_mode_invariant_by_definition_but_not_separate_pilot_evidence
+    OT_FG: not_yet_integrated
+    ET_FG: not_yet_integrated
+  M4:
+    OT_TG: accepted_oracle_true_graph
+    ET_TG: not_yet_integrated
+    OT_FG: not_yet_integrated
+    ET_FG: not_yet_integrated
+  M5:
+    OT_TG: accepted_stage3c
+    ET_TG: accepted_stage3c_computational_only_not_finite_sample_certified
+    OT_FG: accepted_stage3c_computational_reference
+    ET_FG: accepted_stage3c_computational_only_not_finite_sample_certified
+  M6:
+    OT_TG: accepted_D2_exact_reference_only
+    ET_TG: not_yet_integrated
+    OT_FG: not_yet_integrated
+    ET_FG: not_yet_integrated

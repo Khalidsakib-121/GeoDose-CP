@@ -1,0 +1,13 @@
+numpy==2.2.6
+pandas==2.3.3
+scipy==1.15.3
+geopandas==1.1.4
+shapely==2.1.2
+pyogrio==0.13.0
+pyproj==3.7.1
+PyYAML==6.0.3
+scikit-learn==1.7.2
+xgboost==3.0.5
+joblib==1.5.2
+matplotlib==3.10.8
+packaging==26.3

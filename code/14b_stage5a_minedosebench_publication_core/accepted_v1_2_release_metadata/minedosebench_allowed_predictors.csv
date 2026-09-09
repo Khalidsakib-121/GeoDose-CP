@@ -1,0 +1,27 @@
+predictor,timing,allowed_for_method_nuisance,notes
+pv_median_2023,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+pv_median_2024,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+ue_median_2023,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+ue_median_2024,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+water_fraction_2023,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+water_fraction_2024,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+unclear_fraction_2023,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+unclear_fraction_2024,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+rainfall_2023_mm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+rainfall_2024_mm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+et_short_crop_2023_mm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+et_short_crop_2024_mm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+rainfall_2yr_mean_mm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+et_2yr_mean_mm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+climate_water_balance_2yr_mean_mm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+soil_organic_carbon_pct_0_15cm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+soil_ph_cacl2_0_15cm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+soil_clay_pct_0_15cm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+soil_bulk_density_g_cm3_0_15cm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+soil_available_water_capacity_mm_0_100cm,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+terrain_elevation_m,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+terrain_slope_deg,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+terrain_aspect_deg,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+terrain_roughness,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+centroid_x,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.
+centroid_y,pretreatment,True,Frozen public pretreatment feature; transformations must be fit/frozen on nuisance-training data only.

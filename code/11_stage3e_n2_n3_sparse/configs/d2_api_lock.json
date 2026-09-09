@@ -1,0 +1,31 @@
+{
+  "accepted_d2_script_version": "1.2.0-stage3d-d2-freeze",
+  "accepted_d2_source_file_count": 41,
+  "accepted_d2_source_tree_hash": "8348a72833ab43e622a4ff6083fa057b828c4c2b5c1e49cec22ec43d075a5ecc",
+  "alpha_primary": 0.1,
+  "frozen_tolerances": {
+    "candidate_probability_replay_abs_tolerance": 2e-12,
+    "minimum_precision_eigenvalue": 1e-10,
+    "non_gaussian_min_abs_residual": 1e-14,
+    "score_tie_abs_tolerance": 1e-12,
+    "score_tie_rel_tolerance": 1e-12
+  },
+  "randomization_contract": {
+    "conservative_p_value_is_primary_certified_output": true,
+    "derived_subseed_label": "D2_G3_TIE_UNIFORM",
+    "one_uniform_per_fixture": true,
+    "scenario_mapping": "all_D2_fixtures_use_S4",
+    "uniform_held_fixed_across_candidates": true
+  },
+  "signatures": {
+    "CandidateEvaluator": "(prepared: 'PreparedOrbit', *, alpha: 'float', tie_uniform: 'float', score_abs_tolerance: 'float', score_rel_tolerance: 'float', non_gaussian_min_abs_residual: 'float') -> 'None'",
+    "CandidateEvaluator.evaluate": "(self, candidate_y: 'float', *, keep_state: 'bool' = False) -> 'CandidateResult'",
+    "acceptance": "(result: 'CandidateResult', mode: 'str') -> 'bool'",
+    "build_d2_fixture": "(data: 'Stage3BData', package_root: 'str | Path', d1_evaluation_id: 'str')",
+    "derive_seed": "(base_seed: 'int', *labels: 'str') -> 'int'",
+    "frozen_orbit_seed": "(package_root: 'str | Path', scenario_id: 'str' = 'S4', replication: 'int' = 1) -> 'int'",
+    "load_d1_fixture_config": "(package_root: 'str | Path', d1_evaluation_id: 'str') -> 'dict[str, Any]'",
+    "prepare_orbit": "(fixture: 'ExactFixture', *, minimum_precision_eigenvalue_required: 'float') -> 'PreparedOrbit'",
+    "stage3b_data": "(package_root: 'str | Path') -> 'Stage3BData'"
+  }
+}

@@ -1,0 +1,17 @@
+{
+  "checks": {
+    "complete_unsupported_partition": true,
+    "credentials_not_serialized": true,
+    "governing_layers_18": true,
+    "rows_23710": true,
+    "scientific_boundary_intact": true,
+    "source_summary_reconciled": true,
+    "union_reconciled": true
+  },
+  "context_complete_blocks": 23618,
+  "governing_layer_count": 18,
+  "required_blocks": 23710,
+  "stage5a_freeze_authorized": false,
+  "status": "VERIFIED_SUPPORT_CENSUS_OUTPUTS",
+  "unsupported_union_blocks": 92
+}

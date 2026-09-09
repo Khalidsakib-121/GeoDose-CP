@@ -1,0 +1,241 @@
+{
+  "aggregate_sha256": "c487d5f9f14ccffe583c01cc5a7090378929a766063dbd300d2ab277bf212e37",
+  "file_count": 47,
+  "files": [
+    {
+      "bytes": 1226,
+      "path": "README.md",
+      "sha256": "383b1f25b98f92bdaabbdfdf35836dfaca5d9528f73ef8861c8e8bfe0096793d"
+    },
+    {
+      "bytes": 318,
+      "path": "RUN_NSW_REAL_DEMONSTRATION.bat",
+      "sha256": "6a9f942cb5b6b63786f5fdeabab2b9ab0f65c7f0c739f748a23c0b012e34629d"
+    },
+    {
+      "bytes": 3949,
+      "path": "RUN_NSW_REAL_DEMONSTRATION.ps1",
+      "sha256": "2d7a272aa4d72a7c623b8bc7f7e3b89a080cf0d386aa3f709d76796b0b44b815"
+    },
+    {
+      "bytes": 586,
+      "path": "START_HERE.txt",
+      "sha256": "d8dcf82ebbd8359d721ab78f3be17f5adda3f82bd4b557228d4510e10c49ba45"
+    },
+    {
+      "bytes": 2261,
+      "path": "authorities/STAGE1_CLEANING_DECISION.md",
+      "sha256": "5913a7a42c9563a430ff6e53a9b32a93b56460b11b8aeff99b220d3d18c765bb"
+    },
+    {
+      "bytes": 952,
+      "path": "authorities/STAGE2B_ACCEPTANCE_DECISION.md",
+      "sha256": "9e9b1b20038a9e65aad997dda8dc7cf2499b598da955889563204bfed0efb31f"
+    },
+    {
+      "bytes": 757,
+      "path": "authorities/STAGE2B_SELECTION_DECISION.md",
+      "sha256": "7fccd5dc5db8288957fddda4f939a872fb0e32c96d18f49e0fbe7fb7946f903e"
+    },
+    {
+      "bytes": 434,
+      "path": "authorities/STAGE3D_D2_NUMERICAL_TOLERANCES.json",
+      "sha256": "d519cd13c1d2916925e1fc748485ece77c7fb216e74b5d4e1931632a4146ce0c"
+    },
+    {
+      "bytes": 1100,
+      "path": "authorities/STAGE3F_OPERATIONAL_GATE_CONTRACT.json",
+      "sha256": "97a26985b4fbceb330acef3a7a821410424acba1a1d0494db5529c45d2e45a3e"
+    },
+    {
+      "bytes": 1099,
+      "path": "authorities/STAGE3F_OPERATIONAL_THRESHOLDS_FROZEN.json",
+      "sha256": "4bfe1e13edb3f3a551b45c4bca3e785803c1fc1c01f45c3998f60a5788ff50d4"
+    },
+    {
+      "bytes": 11480,
+      "path": "authorities/STAGE5A_MINEDOSEBENCH_INDEPENDENT_AUDIT.md",
+      "sha256": "920a803ca6b82fc4bb6ed3b9f1784d15241d653f92603debe6c05937569673fa"
+    },
+    {
+      "bytes": 933,
+      "path": "authorities/STAGE5B_CLAIM_BOUNDARY.md",
+      "sha256": "d18de464fafb33a60a4d7d8511e6b87fd4e45a7f7b68a3f2bb57813ce0afbde6"
+    },
+    {
+      "bytes": 10334,
+      "path": "authorities/STAGE5B_INDEPENDENT_SCIENTIFIC_AUDIT.md",
+      "sha256": "689a0cc97fbf98096aa6a15199fadae4e71c91ada4b04914d764b8a080957422"
+    },
+    {
+      "bytes": 2391,
+      "path": "configs/expected_authorities.json",
+      "sha256": "afc09068fabc8fc6dc3faaf5d938d9505aa5f40b135032320247da2fd38a9ffe"
+    },
+    {
+      "bytes": 5656,
+      "path": "configs/stage6a_contract.json",
+      "sha256": "a181486fc00ee8c3628c14f2b33b4dbec7fa0ab13b11fc23fc82b2b4202c1879"
+    },
+    {
+      "bytes": 1264,
+      "path": "docs/CLAIM_BOUNDARY.md",
+      "sha256": "2c707c3615278cc3558661413588f3ab9e19aa59d5558ce165359e5b9e1ed7a0"
+    },
+    {
+      "bytes": 720,
+      "path": "docs/FIGURE_PLAN.md",
+      "sha256": "903f70e2dc88953dfa9e083669114b7da88f500e1c936800a206a9b9b2a453b7"
+    },
+    {
+      "bytes": 1548,
+      "path": "docs/MATH_ALGORITHM_ALIGNMENT.md",
+      "sha256": "216fa374a8e51d91639b637e5c690ccf79ca8912b240514b99d4713cf2185283"
+    },
+    {
+      "bytes": 8846578,
+      "path": "inputs/G3_STAGE1_MIN_AUDIT.zip",
+      "sha256": "24be83a4bd61db20fcbb02afaa1e9623029393909906195254b1974d318930c8"
+    },
+    {
+      "bytes": 3090318,
+      "path": "inputs/G3_STAGE2_BLOCKS.zip",
+      "sha256": "6f41e47ed97e88ecd90ad67282908b1b55b993f0eed3f317cea48677c29dd4d4"
+    },
+    {
+      "bytes": 3352025,
+      "path": "inputs/GeoDose_Stage2B_OUTPUTS_FINAL.zip",
+      "sha256": "329a21f3b94d88f8f0b0b3327dbe250eb1df0911f73a6309c6c80c8417bd73a8"
+    },
+    {
+      "bytes": 347518,
+      "path": "inputs/GeoDose_Stage3F_PILOT_S1_S10_20REP_THRESHOLD_FREEZE_OUTPUTS.zip",
+      "sha256": "f1069a23c37d2b9a2e0acea90d6593a6a549a5c495655aa489b7cd9c1610f79d"
+    },
+    {
+      "bytes": 33094714,
+      "path": "inputs/GeoDose_Stage5A_EXTERNAL_CONTEXT_FINAL_OUTPUTS.zip",
+      "sha256": "06c5255351f7a28b708a8348c3c02ee9ff2a3f31388ec20c38076ce440e69ed7"
+    },
+    {
+      "bytes": 1876,
+      "path": "package_stage6a_release.py",
+      "sha256": "421dc34eeb97d02c5379becb86ab682b32189fd67073937d2bea2dc9bb1956d7"
+    },
+    {
+      "bytes": 201,
+      "path": "requirements_py310.txt",
+      "sha256": "3cc1b959a493bdf1e2fd9e66ab2ba4c77498af5a9411f7bf3d45fb0452442b9b"
+    },
+    {
+      "bytes": 0,
+      "path": "src/geodose_stage6a/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2208,
+      "path": "src/geodose_stage6a/authority.py",
+      "sha256": "ffa2643ef8e386d619f7ebf67741482b06c0919d625c21c95c33427b39f0c232"
+    },
+    {
+      "bytes": 2789,
+      "path": "src/geodose_stage6a/common.py",
+      "sha256": "2f76159cea4ee0364442479032737b69ae156dc157a9e1c4ffebe53c6602d2d4"
+    },
+    {
+      "bytes": 9435,
+      "path": "src/geodose_stage6a/data.py",
+      "sha256": "152008341b2d57bdf76e0688c9770fcbbac41b525f401b8e821d935f4e54e904"
+    },
+    {
+      "bytes": 12012,
+      "path": "src/geodose_stage6a/evaluation.py",
+      "sha256": "ccc4ae9f550b56664519ed255c774e5b98649b2bfc88e9c6eee67f5629623435"
+    },
+    {
+      "bytes": 9273,
+      "path": "src/geodose_stage6a/figures.py",
+      "sha256": "5fe4131a00778cf8e4bba2b42cfd5e08e0e18096ad98b969312789a8cdfbfac2"
+    },
+    {
+      "bytes": 4891,
+      "path": "src/geodose_stage6a/intervals.py",
+      "sha256": "f76c04a0355cb714577392be8434db29c7cdbe0c116a7da6e4ef0a97d137c4c3"
+    },
+    {
+      "bytes": 1784,
+      "path": "src/geodose_stage6a/models.py",
+      "sha256": "b7eb091363637ec43325ee08aa281266944977fb6c1fef0220967e275cf35525"
+    },
+    {
+      "bytes": 10710,
+      "path": "src/geodose_stage6a/runner.py",
+      "sha256": "5b4c27317ca7112f131f606786c54620834298431fdfebbf8454405f6dd8b367"
+    },
+    {
+      "bytes": 5550,
+      "path": "src/geodose_stage6a/summaries.py",
+      "sha256": "c4def58fdcbc9c42f37153614cf66cce7d5d82f5f6bc743b67c5b03cd40cffcb"
+    },
+    {
+      "bytes": 231,
+      "path": "stage6a_run.py",
+      "sha256": "80ccd775389bb805ca020756a2c0ed182a17ad4fa9c5321261b21ce1eca38937"
+    },
+    {
+      "bytes": 5376,
+      "path": "tests/test_stage6a.py",
+      "sha256": "b291f4b6792b30c7c56e1fbaec63d0e361de13ebc296a68753571a30a4e140ad"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/geodose_stage5b/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 4800,
+      "path": "vendor/geodose_stage5b/common.py",
+      "sha256": "11a03d7e91e82b9bde213889de814ce0981a919626c1d81f42b12fd498f13cdf"
+    },
+    {
+      "bytes": 10593,
+      "path": "vendor/geodose_stage5b/orbit.py",
+      "sha256": "d72b1a9824e69738383f0a75de4ca8c85bf283e29ff396eb1217f66095f11179"
+    },
+    {
+      "bytes": 8015,
+      "path": "vendor/geodose_stage5b/spatial.py",
+      "sha256": "b798a6ee64c188b3d7c6f4b61ee3176e04d4c03186de0d1f5101c534aed691a3"
+    },
+    {
+      "bytes": 0,
+      "path": "vendor/minedosebench/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+    },
+    {
+      "bytes": 2143,
+      "path": "vendor/minedosebench/io.py",
+      "sha256": "8aa1a3cbb8edea551293abdd08741bc7806c57834196ec83671335e385742c84"
+    },
+    {
+      "bytes": 4179,
+      "path": "vendor/minedosebench/splits.py",
+      "sha256": "436565d48887c066f5d82bf3c82e504b095734e7d3d66ed988735626644c24e6"
+    },
+    {
+      "bytes": 676,
+      "path": "verify_package.py",
+      "sha256": "8441acc2e51220d7149a83309a132f98cb6f262d9df6a7ab077ef6dfce07b0e0"
+    },
+    {
+      "bytes": 621,
+      "path": "verify_runtime.py",
+      "sha256": "eed5ef7b46f0aadd2370d10100598cd4389502d56be6a910854729f830883dfe"
+    },
+    {
+      "bytes": 6237,
+      "path": "verify_stage6a.py",
+      "sha256": "088dd84e85bebc275c950e304a727e8d116fad9a5aa8f4e1482ee0ab2b62aa95"
+    }
+  ]
+}

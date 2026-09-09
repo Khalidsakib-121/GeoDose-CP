@@ -1,0 +1,54 @@
+{
+  "claim_boundary": "External context production only. No MineDoseBench outcome, M2-M6 performance, threshold tuning, imputation, or automatic Stage5A benchmark freeze.",
+  "climate": {
+    "citation": "Jeffrey, S.J., Carter, J.O., Moodie, K.B. & Beswick, A.R. (2001). Using spatial interpolation to construct a comprehensive archive of Australian climate data. Environmental Modelling & Software 16(4), 309-330. https://doi.org/10.1016/S1364-8152(01)00008-1",
+    "license_or_terms": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "source": "Queensland Government SILO gridded climate",
+    "source_identity": "Exact census-locked annual AOI raster hashes in SOURCE_PROVENANCE_MANIFEST.json",
+    "spatial_aggregation": "AREA_WEIGHTED_BLOCK_POLYGON",
+    "temporal_aggregation": "annual sums; all daily grids required valid per source cell",
+    "variables": [
+      "daily_rain",
+      "et_short_crop"
+    ],
+    "years": [
+      2023,
+      2024
+    ]
+  },
+  "context_substrate": {
+    "frozen_context_complete_blocks": 23618,
+    "frozen_valid_area_threshold": 0.99,
+    "imputation_performed": false,
+    "original_required_blocks": 23710,
+    "prospectively_excluded_for_external_support": 92,
+    "selection_timing": "before MineDoseBench outcomes and before M2-M6 performance",
+    "support_census_output_aggregate_sha256": "053e09d0ab54fad015c5c2787029ff8bbb1b28195b31115f7ae76cfe6cd68177",
+    "support_census_version": "1.0.1",
+    "threshold_changed": false
+  },
+  "extraction_software": {
+    "base_acquisition_source_aggregate_sha256": "7a99a75d2958f2bbff6fa5f91c2108d881d0a42295090a2cfadabb29e562b181",
+    "produced_utc": "2026-08-10T15:23:34Z",
+    "production_version": "1.0.1-stage5a-external-context-production-freeze-candidate"
+  },
+  "scientific_context_complete": true,
+  "soil": {
+    "depth_harmonization": "0-15 cm=(5*x_0_5+10*x_5_15)/15; AWC 0-100 cm=sum((AWC_percent/100)*layer_thickness_mm) for 0-5,5-15,15-30,30-60,60-100 cm",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "product_specific_citations": "Recorded exactly in SOURCE_PROVENANCE_MANIFEST.json",
+    "source": "TERN Soil and Landscape Grid of Australia Release 2 estimated-value products",
+    "source_identity": "Exact census-locked COG crop and metadata hashes in SOURCE_PROVENANCE_MANIFEST.json",
+    "spatial_aggregation": "AREA_WEIGHTED_BLOCK_POLYGON"
+  },
+  "spatial_aggregation_contract": "AREA_WEIGHTED_BLOCK_POLYGON",
+  "terrain": {
+    "citation": "Digital Elevation Model (DEM) of Australia with 1 Second Grid, 2024 service",
+    "dataset_pid": "https://pid.geoscience.gov.au/dataset/ga/72759",
+    "derivation": "30 m EPSG:9473 bilinear DEM; Horn 3x3 slope; compass downslope aspect with circular block mean and 0 deg convention for flat/undefined; 3x3 population-SD elevation roughness",
+    "license": "Creative Commons Attribution 4.0 International (CC BY 4.0)",
+    "source": "Geoscience Australia DEM_SRTM_1Second_2024, dataset PID ga/72759",
+    "source_identity": "Exact census-locked GA raw and derived raster hashes in SOURCE_PROVENANCE_MANIFEST.json",
+    "spatial_aggregation": "AREA_WEIGHTED_BLOCK_POLYGON"
+  }
+}

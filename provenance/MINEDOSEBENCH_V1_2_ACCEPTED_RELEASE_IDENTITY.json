@@ -1,0 +1,5 @@
+{
+  "filename": "GeoDose_MineDoseBench_v1_2_0_RELEASE_CANDIDATE.zip",
+  "sha256": "1c5e48930e6bbba5d71bc7bfd558c142f65dc726ed554fe3112cb2450a5f5ef5",
+  "note": "Exact accepted Stage5A v1.2 benchmark release extracted from the frozen Stage5B package. Large benchmark bytes are not duplicated in this compact GitHub-ready code/provenance bundle."
+}

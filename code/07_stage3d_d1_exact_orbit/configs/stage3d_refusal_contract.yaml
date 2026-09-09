@@ -1,0 +1,20 @@
+refusal_codes:
+  D1_INPUT_HASH_MISMATCH: frozen upstream input changed
+  D1_CONTRACT_MISMATCH: machine-readable contract inconsistent
+  D1_BLOCK_TOO_LARGE: exact block or distinct orbit exceeds frozen cap
+  D1_BLOCK_DISCONNECTED: exact connected-block requirement failed
+  D1_TARGET_SLOT_INVALID: target slot absent or duplicated
+  D1_BOUNDARY_PAYLOAD_MISSING: required boundary residual unavailable
+  D1_UNSUPPORTED_ENDPOINT: endpoint is not an audited atom
+  D1_POSITIVITY_FAILURE: target intervention has positive mass where target-slot observational law is zero
+  D1_TREATMENT_LIKELIHOOD_INVALID: treatment likelihood is negative or nonfinite where required
+  D1_PRECISION_NOT_PD: proper GMRF precision failed
+  D1_TRANSFORM_SINGULAR: non-Gaussian inverse-transform Jacobian numerically singular
+  D1_ALL_ORBIT_WEIGHTS_ZERO: normalized exact law undefined
+  D1_NONFINITE_ORBIT_WEIGHT: unexpected nonfinite finite-support weight
+  D1_ENUMERATION_COUNT_MISMATCH: candidate-specific quotient-orbit state count wrong
+  D1_CANDIDATE_QUOTIENT_MISMATCH: target/calibration numeric collision was not quotient-identified
+  D1_LOCAL_GLOBAL_MISMATCH: graph-boundary cancellation audit failed
+  D1_FULL_TARGET_LAW_MISMATCH: direct full-joint target probabilities disagree with graph-local G2 probabilities
+  D1_SCALAR_VECTORIZED_MISMATCH: independent implementations disagree
+D1_behavior: fail_closed_no_probability_claim

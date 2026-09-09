@@ -1,0 +1,32 @@
+{
+  "stage5a_audit_sha256": "920a803ca6b82fc4bb6ed3b9f1784d15241d653f92603debe6c05937569673fa",
+  "stage5a_contract_hashes": {
+    "MINEDOSEBENCH_MATH_PROTOCOL.md": "a4e826ff9ea2d83225c25a74fffead4c2723dcc9687c46d6200c43b3256d4b79",
+    "STAGE5A_evaluation_contract.csv": "258ea8abccd868a4747aca14058ebd45fd79215216a6f29ff4b211846fa1e3a2",
+    "STAGE5B_EVALUATION_CONTRACT.md": "2edf91df5482cc979dcedd09ed10e5d65f15566fe3396235c03b85a9fdc222f8"
+  },
+  "stage5a_frozen_context_complete_blocks": 23618,
+  "stage5a_frozen_context_exclusions": 92,
+  "stage5a_primary_target_rows": 13500,
+  "stage5a_release_manifest_aggregate": "513f1140d3dbcc0a2910a2227255d6de9cea4b60414aef5b73cd998d8e619ec3",
+  "stage5a_release_zip_sha256": "1c5e48930e6bbba5d71bc7bfd558c142f65dc726ed554fe3112cb2450a5f5ef5",
+  "stage5a_scenario_count": 27,
+  "stage5a_seed_rows": 540,
+  "stage5a_valid_area_threshold": 0.99,
+  "vendor_d3_exact_hashes": {
+    "__init__.py": "586c9af0919ae282700729700def55f45cd5ad443ded4e2d112e222ff935418f",
+    "graph_law.py": "dbf481195ddfc9e33afab783f8192d3b1f0f81ec48ba91a48bd5cb554dd576bc",
+    "io.py": "dea8fda0028de2be7d5f2daa0cdd34bf180cda399c8c87e1f0258949a22450aa",
+    "m3_oracle.py": "a2fc7bd4270f57170c081c9f0a30fb2686be1fd6d5daf9a521e670baff5e2a2e",
+    "m4_oracle.py": "7ce7f7c2714e17538ea6a7bbb58087733d592aaed60add5565c05c6d77a32f24",
+    "orbit.py": "a036cca7afa59fe1ce4e96d2cd190163244f96b7a733b91ebfbfdfb50db330d1"
+  },
+  "vendor_minedosebench_hashes": {
+    "__init__.py": "cd223f4863e849e274ffd4433af055657692744b43ac2237f7de989d10699e32",
+    "generator.py": "a6e23bdcb556e994d8432bae6904d8bca87c931586be5f4b2737bbadb08fc7e3",
+    "gmrf.py": "b8ecca68c278622de6d9dbdcadb40126a3b4936c6b6e98b858c47c6ae3a6c7f6",
+    "io.py": "8aa1a3cbb8edea551293abdd08741bc7806c57834196ec83671335e385742c84",
+    "math.py": "07897af4fe101cdaf77b790c8d3f05039ee8a13a5a0ea5aa1fc1e69b8cc3030d",
+    "scenarios.py": "3a7604a22657a9fa6802547e7c0a84c8193f876bd898830099cf37025152132f"
+  }
+}

@@ -1,0 +1,21 @@
+dominating_measure: audited_endpoint_atoms_plus_Lebesgue_on_open_unit_interval
+observational_law:
+  atom_0: pi_atom_0
+  atom_1: pi_atom_1
+  interior: pi_interior_times_Beta_alpha_beta_density
+intervention:
+  interior:
+    family: truncated_Gaussian_on_open_unit_interval
+    primary_bandwidth: 0.1
+  endpoint:
+    family: exact_audited_atom
+    audited_atoms: [0.0, 1.0]
+exact_target_slot_rule: replace_observational_g_at_target_slot_by_intervention_q
+target_tilt_identity: r_t_equals_q_over_g_and_r_t_times_g_equals_q
+positivity_rule: q_positive_implies_target_slot_observational_g_positive
+non_target_block_rule: retain_observational_g_factors
+non_target_zero_likelihood: allowed_and_yields_zero_probability_for_that_orbit_state
+endpoint_jitter: prohibited
+endpoint_clipping: prohibited
+unsupported_endpoint: refusal
+zero_target_tilt_states: retain_as_exact_zero_probability_states

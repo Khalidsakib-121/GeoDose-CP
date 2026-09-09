@@ -1,0 +1,23 @@
+outcome_transform:
+  form: residual = (Y - m(A,U))/s(A,U)
+  inverse_density_jacobian: 1/s(A,U)
+  D1_oracle_scale: 1.0
+  source: accepted_Stage3B_generator_truth_for_algebra_only
+gaussian_GMRF:
+  precision: Q = (I - rho*D^(-1/2) W D^(-1/2))/scale^2
+  residual_scale: 0.35
+  residual_scale_source: accepted_Stage3B_generator_constant
+  proper_condition: minimum_eigenvalue_Q_greater_than_1e-10
+  reference_case: S4_RHO060
+non_gaussian_transformed_GMRF:
+  reference_case: S4_RHO060_NONGAUSSIAN
+  power: 1.5
+  latent_precision: same_proper_GMRF_precision_as_registered_case
+  inverse_transform: z = sign(r)*abs(r)^(1/p)
+  local_log_density: latent_GMRF_local_exponent_plus_sum_block_log_abs_dz_dr
+  numerical_zero_rule: refuse_if_abs_residual_below_1e-14_in_transformed_density_audit
+  scope: concrete_non_gaussian_specialization_not_generic_clique_API
+boundary:
+  definition: outside_vertices_adjacent_to_at_least_one_block_vertex
+  outside_only_cliques: cancel
+  source_graph: stage3b_true_graph_edges_by_case

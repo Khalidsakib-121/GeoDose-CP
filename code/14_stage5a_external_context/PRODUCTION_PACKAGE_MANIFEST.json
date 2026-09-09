@@ -1,0 +1,133 @@
+{
+  "aggregate_sha256": "5bf7351ba24544c638a5115ab5995d2bae3a205b46ea6f9a1b3284cae8ba273f",
+  "correction": "v1.0.1 fixes the operational base-manifest aggregate recomputation defect in v1.0.0. Scientific design and frozen 23,618/92 substrate decision are unchanged.",
+  "embedded_authorities": {
+    "base_acquisition_aggregate_sha256": "7a99a75d2958f2bbff6fa5f91c2108d881d0a42295090a2cfadabb29e562b181",
+    "support_census_output_aggregate_sha256": "053e09d0ab54fad015c5c2787029ff8bbb1b28195b31115f7ae76cfe6cd68177",
+    "support_census_zip_sha256": "2facc83842bd2ec8e30a2763c7040cb5a6e7446a0292d52d1eff0a1ea9c5152e"
+  },
+  "immutable_file_count": 23,
+  "immutable_files": [
+    {
+      "file": "README.md",
+      "sha256": "16094c7b4a186c1d4ea8b823b5c7789b4a9090a1c711390dac9b978259ea65ec",
+      "size": 2039
+    },
+    {
+      "file": "RUN_FINAL_CONTEXT_PRODUCTION.bat",
+      "sha256": "c355deaf23780952bb87a3638121f2f22de63e8e1d4ca6cfae232b360d400bdc",
+      "size": 315
+    },
+    {
+      "file": "RUN_FINAL_CONTEXT_PRODUCTION.ps1",
+      "sha256": "5a4022630eb1e0389b9fe42f14d5686a4586d69747662f87c71fcf48eafa89f0",
+      "size": 2468
+    },
+    {
+      "file": "RUN_FINAL_CONTEXT_VERIFY_ONLY.bat",
+      "sha256": "1a1c33eb5ba56fa5c81c7e6b183ed01e5fe74461cc07d073cbb5faf70c57ecf3",
+      "size": 109
+    },
+    {
+      "file": "RUN_FINAL_CONTEXT_VERIFY_ONLY.ps1",
+      "sha256": "eb3f5ba2da0cd37827faa47d2cd182c6a44b4a5e0f774d2340171861fb174383",
+      "size": 887
+    },
+    {
+      "file": "START_HERE.txt",
+      "sha256": "6303d27bef7062c611433336473f8376326847112b10a42c4df29e74bcbe0624",
+      "size": 1477
+    },
+    {
+      "file": "configs/production_contract.json",
+      "sha256": "97b5310250cebd602220632b11e040bdcfe7042b626b6d9a956b6162c1820ad6",
+      "size": 2242
+    },
+    {
+      "file": "docs/ALIGNMENT_RECHECK.md",
+      "sha256": "e920e737570fac638ff84e17103df561428904d7eeacee6924195f904f0ec2df",
+      "size": 1267
+    },
+    {
+      "file": "docs/OUTPUT_CONTRACT.md",
+      "sha256": "d17900fec4b5891fe13270811e1436116a58e1594bf80c042aca2046ef3d7caa",
+      "size": 866
+    },
+    {
+      "file": "docs/RECOVERY_AND_RESUMABILITY.md",
+      "sha256": "8dfc0b0ea7961740c29310e6408986f0e19c1954802bd94b1915b060cb02f9cf",
+      "size": 629
+    },
+    {
+      "file": "docs/RELEASE_RECHECK.md",
+      "sha256": "eebbbf2295d32c83bdb3b7dd2738bd8af706da9b190464c8e13e87a404c1a398",
+      "size": 1443
+    },
+    {
+      "file": "docs/SCIENTIFIC_CONTRACT.md",
+      "sha256": "dd4f88c5226b25d6debf6ec07261ff3822a1f407c266e65af07237cf8bd66d54",
+      "size": 969
+    },
+    {
+      "file": "docs/V1_0_1_CORRECTION_NOTE.md",
+      "sha256": "e901863183b496d90adc7df59e5ed0ccbd9861b06311f73dac0c3e10620aa8e7",
+      "size": 924
+    },
+    {
+      "file": "final_context_production.py",
+      "sha256": "84b347d4a2a74da81bd3fa2d230152940b5e051addf15bdbbac0282a49bf24ad",
+      "size": 592
+    },
+    {
+      "file": "inputs/CONTEXT_SUPPORT_CENSUS_OUTPUTS_ACCEPTED.zip",
+      "sha256": "2facc83842bd2ec8e30a2763c7040cb5a6e7446a0292d52d1eff0a1ea9c5152e",
+      "size": 231619
+    },
+    {
+      "file": "src/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "size": 0
+    },
+    {
+      "file": "src/authority.py",
+      "sha256": "43c660c5c4f055e4eb21f00bf8942f4ff3e8b544f6c1a30909762d1fdedf26bc",
+      "size": 6132
+    },
+    {
+      "file": "src/common.py",
+      "sha256": "e7acf2bc29c6e32feee4fbffa2f7f63571c9ea7aa7f5113620703ffafa04ad19",
+      "size": 2835
+    },
+    {
+      "file": "src/production.py",
+      "sha256": "36a15a0adbea3d4db85b99c0d64bf0dfa0a26e77ef6324dbf9095fc6d7a74171",
+      "size": 25772
+    },
+    {
+      "file": "src/verify.py",
+      "sha256": "1c4f0820a69df98f254791c747a2b2717ee139297e0d53e3cd75640781772545",
+      "size": 9316
+    },
+    {
+      "file": "tests/run_tests.py",
+      "sha256": "1bddefd9ee2ac79a4a53bbf84d6160e8e081f3c49d446e5a9899441a994e07a7",
+      "size": 5436
+    },
+    {
+      "file": "verify_final_context_only.py",
+      "sha256": "5c65fdfd87c4336edca3ee8c92e88641855d4181a014d30bef2366a55dfe5eba",
+      "size": 455
+    },
+    {
+      "file": "verify_package.py",
+      "sha256": "9ee24bef1191ce5f4ece55ff0371c1597c1f1cc636716159942f1f773b24947e",
+      "size": 929
+    }
+  ],
+  "note": "Runtime outputs/checkpoints and configs/local_paths_windows.json are outside the immutable scientific-source aggregate. Production uses no live source selection.",
+  "package": "GeoDose_Stage5A_External_Context_Production_v1_0_1_FREEZE_CANDIDATE",
+  "user_editable_files": [
+    "configs/local_paths_windows.json"
+  ],
+  "version": "1.0.1-stage5a-external-context-production-freeze-candidate"
+}

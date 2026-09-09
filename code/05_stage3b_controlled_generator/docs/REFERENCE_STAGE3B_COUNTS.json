@@ -1,0 +1,15 @@
+{
+  "validation_replication": 1,
+  "validation_case_count": 27,
+  "unit_rows": 16419,
+  "hard_truth_rows": 115558,
+  "treatment_transport_rows": 115558,
+  "target_design_rows": 16419,
+  "realized_target_draw_rows": 23498,
+  "observational_target_draw_rows": 250,
+  "support_diagnostic_rows": 190,
+  "temporal_rows": 1875,
+  "fitted_graph_edge_rows": 55742,
+  "true_graph_edge_rows": 57882,
+  "s10_paired_aggregation_rows": 169
+}

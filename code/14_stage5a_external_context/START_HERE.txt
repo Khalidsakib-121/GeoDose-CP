@@ -1,0 +1,21 @@
+SUPERSEDES v1.0.0: v1.0.1 corrects the base-manifest aggregate recomputation contract; scientific design is unchanged.
+
+GeoDose-CP Stage5A External Context Production v1.0.1 FREEZE CANDIDATE
+
+PURPOSE
+Freeze and produce the final real external context for the prospectively selected 23,618-block context-complete substrate established by the independently verified Support Census v1.0.1.
+
+DO THIS
+1. Keep your successful Acquisition v1.0.1 working folder and CONTEXT_SOURCE_CACHE exactly where they are.
+2. Extract this ZIP into a NEW folder.
+3. Double-click RUN_FINAL_CONTEXT_PRODUCTION.bat.
+4. The runner reuses the frozen Python 3.10 environment and exact census-locked cached rasters. It should NOT ask for a TERN API key and should NOT redownload source data.
+5. Wait for: FINAL CONTEXT PRODUCTION PASSED.
+6. Send FINAL_CONTEXT_PRODUCTION_OUTPUTS\GeoDose_Stage5A_EXTERNAL_CONTEXT_FINAL_OUTPUTS.zip for independent audit.
+
+IMPORTANT
+- 23,710 original required blocks -> 23,618 context-complete retained -> 92 prospectively excluded for external support only.
+- Frozen valid-area threshold remains >=0.99 on all 18 governing layers.
+- No imputation. No threshold relaxation. No unsupported-block recovery.
+- No benchmark outcomes or M2-M6 performance are read.
+- Do NOT run the unchanged MineDoseBench Generator v1.1.0 after this. It still requires all 23,710 rows. A prospectively revised Stage5A freeze package must be created next using the frozen 23,618-block substrate.

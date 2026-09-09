@@ -1,0 +1,25 @@
+GeoDose Stage 3D D4 v1.1.0 — START HERE
+
+USE ONLY THIS v1.1.0 RELEASE FOR D4.
+
+Preferred procedure:
+1. Extract All to:
+   D:\GeoDose_Stage3D_D4_M6_NewData_Nuisance_Integration_v1_1_0
+2. Open the inner project folder.
+3. Double-click RUN_STAGE3D_D4.bat.
+
+Before creating .venv or installing packages, the launcher runs a standard-library-only preflight that checks:
+- all 8 frozen upstream output ZIP SHA-256 values and ZIP integrity;
+- Stage3C source 18/18;
+- D2 source 41/41;
+- accepted vendored M3/M4 bytes.
+
+The scientific runner then repeats provenance checks, validates the exact accepted D2 v1.2 callable/tolerance/randomization contract, replays accepted D2 candidates (including the duplicate 360-state fixture), and only then evaluates new D4 cases.
+
+If accidentally launched from Windows Explorer's ZIP/compressed-folder view, the BAT attempts to relocate the complete package to the D:\ path above before creating .venv. Extract All is still preferred.
+
+Expected successful output:
+GeoDose_Stage3D_D4_M6_NEWDATA_NUISANCE_OUTPUTS.zip
+
+Send that ZIP back for independent review.
+Do NOT start Stage3E or the 20-rep pilot until D4 is accepted.

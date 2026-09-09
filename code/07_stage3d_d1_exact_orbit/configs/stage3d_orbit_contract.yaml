@@ -1,0 +1,24 @@
+primary_block_size: 6
+stress_block_size: 8
+maximum_exact_block_size: 8
+primary_fixture: size6_unique
+stress_fixture: size8_unique
+duplicate_fixture: size6_one_duplicate_pair
+movable_payload_definition: [A, Y]
+payload_equivalence_key: exact_numeric_pair_A_Y_after_candidate_replacement
+candidate_source_index_tracked_for_replacement: true
+candidate_origin_part_of_payload_equivalence: false
+candidate_specific_orbit: true
+candidate_collision_rule: recompute_quotient_and_multiplicity_at_every_candidate_y
+distinct_state_rule: quotient_by_exact_payload_multiplicity
+identity_state_first_when_present: true
+permutation_representation: source_payload_index_at_each_fixed_slot
+full_support_sampling_allowed: false
+enumeration_limit_rule: refuse_if_block_size_exceeds_8_or_distinct_states_exceed_factorial_8
+expected_distinct_counts:
+  size6_unique: 720
+  size8_unique: 40320
+  size6_one_duplicate_pair: 360
+mandatory_collision_test:
+  three_payload_noncollision_states: 6
+  three_payload_target_calibration_collision_states: 3

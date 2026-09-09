@@ -1,0 +1,29 @@
+{
+  "stage3a_output_zip": [
+    "D:\\GeoDose_Stage3A_Registry_Generator_v1_3_1_FREEZE\\GeoDose_Stage3A_Registry_Generator_v1_3_1_FREEZE\\GeoDose_Stage3A_OUTPUTS.zip"
+  ],
+  "stage3b_output_zip": [
+    "D:\\GeoDose_Stage3B_Controlled_Generator_v1_2_FREEZE\\GeoDose_Stage3B_Controlled_Generator_v1_2_FREEZE\\GeoDose_Stage3B_OUTPUTS.zip"
+  ],
+  "stage3b_source_root": [
+    "D:\\GeoDose_Stage3B_Controlled_Generator_v1_2_FREEZE\\GeoDose_Stage3B_Controlled_Generator_v1_2_FREEZE"
+  ],
+  "stage3c_source_root": [
+    "D:\\GeoDose_Stage3C_v1_1\\GeoDose_Stage3C_Reference_Baselines_v1_1_FREEZE"
+  ],
+  "stage3d_d2_source_root": [
+    "D:\\GeoDose_Stage3D_D2_G3_Candidate_Inversion_v1_2_FREEZE\\GeoDose_Stage3D_D2_G3_Candidate_Inversion_v1_2_FREEZE"
+  ],
+  "stage3d_d4_source_root": [
+    "D:\\GeoDose_Stage3D_D4_M6_NewData_Nuisance_Integration_v1_1_0\\GeoDose_Stage3D_D4_M6_NewData_Nuisance_Integration_v1_1_0"
+  ],
+  "stage3d_d4_output_zip": [
+    "D:\\GeoDose_Stage3D_D4_M6_NewData_Nuisance_Integration_v1_1_0\\GeoDose_Stage3D_D4_M6_NewData_Nuisance_Integration_v1_1_0\\GeoDose_Stage3D_D4_M6_NEWDATA_NUISANCE_OUTPUTS.zip"
+  ],
+  "stage3e_source_root": [
+    "D:\\GeoDose_Stage3E_N2_N3_Scalable_Certification_v1_0\\GeoDose_Stage3E_N2_N3_Scalable_Certification_v1_0"
+  ],
+  "stage3e_output_zip": [
+    "D:\\GeoDose_Stage3E_N2_N3_Scalable_Certification_v1_0\\GeoDose_Stage3E_N2_N3_Scalable_Certification_v1_0\\GeoDose_Stage3E_N2_N3_SCALABLE_CERTIFICATION_OUTPUTS.zip"
+  ]
+}

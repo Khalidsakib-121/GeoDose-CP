@@ -1,0 +1,43 @@
+{
+  "stage": "Stage5C-postfreeze-computational-closure",
+  "version": "1.0.0",
+  "purpose": "Verify and freeze manuscript-ready evidence from the registered Stage5B primary benchmark and three post-freeze supervisor-requested analyses.",
+  "evidence_blocks": [
+    "REGISTERED_PRIMARY_STAGE5B",
+    "POSTFREEZE_EXACT_SPARSE_AUDIT",
+    "POSTFREEZE_ESTIMATED_G_SENSITIVITY",
+    "POSTFREEZE_EXTERNAL_BASELINES"
+  ],
+  "stage6a_scope": "Stage6A NSW remains separately frozen and is not reprocessed by this closure package.",
+  "alpha": 0.1,
+  "candidate_domain": [
+    -1.0,
+    1.0
+  ],
+  "primary_track": "RF_ET_FG_PRIMARY",
+  "primary_truth_scale": "observed",
+  "primary_methods": [
+    "M2",
+    "M3",
+    "M4",
+    "M5",
+    "M6"
+  ],
+  "expected_input_sha256": {
+    "STAGE5B_PRIMARY_RESULTS.zip": "1a0df579bb58ea4a202dd9c4e7a168aafce5ac1c7f43b496ea6b7250771227ce",
+    "EXACT_SPARSE_AUDIT_VERIFIED_v2.zip": "d5cc525807a9193d507a4fc3aaba72ac1a2a74a7e52e391b19cec71ed6506bfb",
+    "ESTIMATED_G_SENSITIVITY_RESULTS.zip": "e17ceaf0e99679b8a5dd1167c662f8f1378926b5e09cd2228ba4fcd82187d386",
+    "EXTERNAL_BASELINE_RESULTS.zip": "d411d059bf3bf17bd9afc401a5c1ad8a0d9c4e9d60ab1759027e2de2660f4b8f"
+  },
+  "accepted_nested_stage5b_release_sha256": "a0060e42980d4816ff81d1449c17913b2d8ea79d9d61115249635077179d9fac",
+  "stage5a_release_sha256": "1c5e48930e6bbba5d71bc7bfd558c142f65dc726ed554fe3112cb2450a5f5ef5",
+  "rules": {
+    "modify_registered_stage5b": false,
+    "retune_models_or_thresholds": false,
+    "replace_primary_benchmark_with_postfreeze_results": false,
+    "width_claim_requires_matched_coverage": true,
+    "external_baseline_claim": "M6 may be claimed strongest for selective coverage/lower-tail local robustness in frozen external subset, not universally most efficient.",
+    "exact_sparse_claim": "Aggregate agreement only; no uniform query-level equivalence claim.",
+    "estimated_g_claim": "Treatment-density sensitivity only; not replacement for registered primary benchmark."
+  }
+}

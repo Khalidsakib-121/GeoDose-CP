@@ -1,0 +1,28 @@
+{
+  "outcome_and_propensity_features": [
+    "X_spatial_1",
+    "X_spatial_2",
+    "X_nonlinear_1",
+    "X_nonlinear_2",
+    "x_coord",
+    "y_coord"
+  ],
+  "treatment_feature": "A",
+  "target_design_ratio_feature": ["X_nonlinear_1"],
+  "target_design_ratio_used_by_reference_methods": false,
+  "forbidden_truth_fields": [
+    "Y_true_at_A",
+    "shared_spatial_residual",
+    "conditional_mean_at_A",
+    "oracle_g_mixed_at_A",
+    "oracle_target_design_ratio",
+    "hidden_spatial_confounder",
+    "substrate_proxy_hidden",
+    "Y_true_at_A_star",
+    "Y_observed_at_A_star"
+  ],
+  "fit_role": "nuisance_training",
+  "diagnostic_role": "support_audit",
+  "calibration_role": "calibration",
+  "evaluation_role": "test_target"
+}

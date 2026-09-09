@@ -1,0 +1,111 @@
+cases:
+- case_id: S2_SPATIAL
+  target_dose: 0.5
+  purpose: new_spatial_only_case_wiring_without_forced_method_equality_claim
+  block_rule: frozen_stage3b_size6_coordinates
+  nuisance_variants:
+  - OT_TG
+  - ET_TG
+  - OT_FG
+  - ET_FG
+- case_id: S3_SHIFT
+  target_dose: 0.9
+  purpose: new_case_no_spatial_dependence_treatment_shift_wiring
+  block_rule: frozen_stage3b_size6_coordinates
+  nuisance_variants:
+  - OT_TG
+  - ET_TG
+  - OT_FG
+  - ET_FG
+- case_id: S4_RHO040
+  target_dose: 0.9
+  purpose: new_combined_shift_dependence_case_not_archived_in_D2
+  block_rule: frozen_stage3b_size6_coordinates
+  nuisance_variants:
+  - OT_TG
+  - ET_TG
+  - OT_FG
+  - ET_FG
+- case_id: S6_ROOK
+  target_dose: 0.75
+  purpose: connected_fitted_rook_graph_case
+  block_rule: frozen_stage3b_size6_coordinates
+  nuisance_variants:
+  - OT_TG
+  - ET_TG
+  - OT_FG
+  - ET_FG
+- case_id: S6_OMIT50
+  target_dose: 0.75
+  purpose: fitted_omitted_edge_graph_case
+  block_rule: deterministic_connected_under_fitted_graph
+  nuisance_variants:
+  - OT_TG
+  - ET_TG
+  - OT_FG
+  - ET_FG
+- case_id: S7_EXCHANGEABLE
+  target_dose: 0.5
+  purpose: new_benign_exchangeable_case_wiring_without_forced_method_equality_claim
+  block_rule: frozen_stage3b_size6_coordinates
+  nuisance_variants:
+  - OT_TG
+  - ET_TG
+  - OT_FG
+  - ET_FG
+- case_id: ST1_MIXED_ATOMS
+  target_dose: 0.0
+  purpose: exact_endpoint_zero_atom
+  block_rule: frozen_stage3b_size6_coordinates
+  nuisance_variants:
+  - OT_TG
+  - ET_TG
+- case_id: ST1_MIXED_ATOMS
+  target_dose: 1.0
+  purpose: exact_endpoint_one_atom
+  block_rule: frozen_stage3b_size6_coordinates
+  nuisance_variants:
+  - OT_TG
+  - ET_TG
+accepted_replay:
+  d1_evaluation_id: G6_GAUSS_INTERIOR_TRUTH
+  d2_fixture_id: G6_GAUSS_INTERIOR
+  candidates:
+  - -8.0
+  - 0.0
+  - 8.0
+  duplicate_replay:
+    d1_evaluation_id: G6_GAUSS_DUPLICATE_TRUTH
+    d2_fixture_id: G6_GAUSS_DUPLICATE
+    candidates:
+    - 0.0
+    expected_distinct_states: 360
+expected_refusals:
+- refusal_id: UNSUPPORTED_ENDPOINT
+  case_id: ST1_INTERIOR_ONLY
+  target_dose: 0.0
+  block_nodes:
+  - 294
+  - 318
+  - 319
+  - 343
+  - 344
+  - 320
+  treatment_mode: OT
+  graph_mode: TG
+  expected_reason_contains: support
+  purpose: confirm_unaudited_endpoint_is_rejected_before_exact_inference
+- refusal_id: DISCONNECTED_BLOCK
+  case_id: S4_RHO040
+  target_dose: 0.9
+  block_nodes:
+  - 15
+  - 65
+  - 115
+  - 165
+  - 215
+  - 320
+  treatment_mode: OT
+  graph_mode: TG
+  expected_reason_contains: disconnected
+  purpose: confirm_invalid_exact_block_fails_closed

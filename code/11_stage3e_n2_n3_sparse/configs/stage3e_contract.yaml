@@ -1,0 +1,56 @@
+stage: Stage3E_N2_N3_Scalable_Certification
+version: 1.0.0-stage3e-freeze
+alpha: 0.10
+residual_scale: 0.35
+rho_parameter_domain: [0.0, 0.95]
+spatial_confidence_delta: 0.05
+confidence_outer_cell_tolerance: 0.00005
+s3_coverage_test_repetitions: 200
+s3_coverage_test_seed: 391731
+s3_coverage_test_nodes: 30
+s3_coverage_test_true_rho: 0.55
+s3_coverage_test_mc_se_multiplier: 3.0
+minimum_precision_eigenvalue: 1.0e-10
+numerical_tolerance: 1.0e-10
+kl_nonnegative_tolerance: 1.0e-9
+candidate_neighborhood_sizes: [0, 4, 8, 16, 32, 64]
+primary_pilot_neighborhood_size: 64
+exact_vs_sparse_neighborhood_sizes: [8, 16, 32, 64]
+exact_vs_sparse_candidate_grid: [-1.0, 0.0, 1.0]
+maximin_first_node_rule: minimum_node_index
+predecessor_rule: nearest_predecessors_euclidean_then_node_id
+ordering_outcome_blind: true
+primary_certified_n3_route: oracle_sparse_identity_target_design
+estimated_treatment_theorem_status: not_certified_stage3c_model_not_T1_exponential_family
+estimated_spatial_vecchia_theorem_status: not_fused_without_frozen_vecchia_parameter_bridge
+target_ratio_nonidentity_theorem_status: diagnostic_only_unbounded_normal_feature_violates_bounded_feature_assumption
+computation_delta: 0.0
+computation_delta_basis: exact_finite_orbit_on_local_block_for_smoke_validation_no_monte_carlo
+operational_ess_threshold: null
+operational_max_weight_threshold: null
+operational_coverage_lower_bound_threshold: null
+operational_threshold_status: deferred_to_20rep_pilot
+cases:
+  - {case_id: S2_SPATIAL, target_dose: 0.50, purpose: spatial_only}
+  - {case_id: S3_SHIFT, target_dose: 0.90, purpose: treatment_shift_only}
+  - {case_id: S4_RHO060, target_dose: 0.90, purpose: combined_shift_reference}
+  - {case_id: S4_RHO080, target_dose: 0.90, purpose: strong_spatial_stress}
+  - {case_id: S4_RHO060_DESIGN_SHIFT, target_dose: 0.90, purpose: target_design_ratio_validation}
+  - {case_id: S6_ROOK, target_dose: 0.75, purpose: working_graph_misspecification}
+  - {case_id: S6_OMIT50, target_dose: 0.75, purpose: working_graph_misspecification}
+  - {case_id: S7_EXCHANGEABLE, target_dose: 0.50, purpose: exchangeable_reduction}
+  - {case_id: S8_SEVERE_TAIL, target_dose: 0.98, purpose: treatment_support_stress}
+  - {case_id: ST1_MIXED_ATOMS, target_dose: 0.0, purpose: endpoint_zero}
+  - {case_id: ST1_MIXED_ATOMS, target_dose: 1.0, purpose: endpoint_one}
+claim_rules:
+  n2_gaussian_oracle: theorem_backed
+  n3_oracle_identity_ratio: theorem_backed
+  target_design_ratio_identity: exact
+  target_design_ratio_shift_fit: diagnostic_only
+  s3_centered_affine_gmrf: theorem_backed_within_correct_family
+  gmrf_boundary_certificate: theorem_backed_within_correct_family
+  s3_to_vecchia_parameter_bridge: not_claimed
+  fitted_graph_misspecification_kl: simulation_oracle_diagnostic_only
+  estimated_treatment_coverage: not_claimed
+  pilot_performance_evidence: false
+  production_performance_evidence: false

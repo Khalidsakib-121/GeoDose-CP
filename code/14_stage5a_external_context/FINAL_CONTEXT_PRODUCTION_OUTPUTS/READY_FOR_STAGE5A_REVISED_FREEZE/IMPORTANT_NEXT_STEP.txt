@@ -1,0 +1,1 @@
+These files freeze the prospectively context-complete 23,618-block substrate. Do NOT run the unchanged MineDoseBench Generator v1.1.0, because that version still requires all 23,710 original rows. The next stage must be a prospectively revised MineDoseBench freeze package that accepts this frozen substrate without examining outcomes or M2-M6 performance.

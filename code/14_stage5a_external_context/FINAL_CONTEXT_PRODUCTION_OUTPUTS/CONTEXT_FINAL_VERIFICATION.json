@@ -1,0 +1,18 @@
+{
+  "M2_M6_results_read": false,
+  "automatic_minedosebench_freeze": false,
+  "benchmark_outcomes_read": false,
+  "checks_failed": 0,
+  "checks_passed": 52,
+  "frozen_context_complete_blocks": 23618,
+  "frozen_support_exclusions": 92,
+  "frozen_valid_area_threshold": 0.99,
+  "imputation_performed": false,
+  "next_action": "Independent audit of this final context production. Then create/use a prospectively revised MineDoseBench Stage5A freeze package that accepts the frozen 23,618-block substrate. Do not run unchanged MineDoseBench v1.1.0.",
+  "original_required_blocks": 23710,
+  "stage": "GeoDose-CP Stage5A External Context Production",
+  "status": "FINAL_CONTEXT_PRODUCTION_PASSED_PENDING_STAGE5A_REVISED_FREEZE",
+  "thresholds_retuned": false,
+  "verified_utc": "2026-08-10T15:23:40Z",
+  "version": "1.0.1-stage5a-external-context-production-freeze-candidate"
+}

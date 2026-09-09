@@ -1,0 +1,200 @@
+{
+  "alpha": 0.1,
+  "candidate_domain": [
+    -1.0,
+    1.0
+  ],
+  "candidate_inversion": {
+    "bisection_iterations": 40,
+    "boundary_abs_tol": 1e-06,
+    "boundary_rel_tol": 1e-05,
+    "grid_points": 4096,
+    "sample_targets_per_mine": {
+      "180m": {
+        "RF_PRIMARY": 12,
+        "XGB_CONFIRMATION": 6
+      },
+      "90m": {
+        "RF_PRIMARY": 20,
+        "XGB_CONFIRMATION": 10
+      }
+    }
+  },
+  "crs": "EPSG:9473",
+  "expected_counts": {
+    "180m": {
+      "baseline_ineligible": 1027,
+      "eligible": 4352,
+      "inventory": 5379,
+      "primary": 3506,
+      "secondary": 846,
+      "test": 701
+    },
+    "90m": {
+      "baseline_ineligible": 2318,
+      "eligible": 17632,
+      "inventory": 19950,
+      "primary": 13683,
+      "secondary": 3949,
+      "test": 2736
+    }
+  },
+  "expected_m3_inverted_rows": 144,
+  "expected_query_rows": 41244,
+  "figure_count": 7,
+  "forbidden_predictors": [
+    "mapped_rehabilitation_fraction",
+    "rehabilitation_area_m2",
+    "disturbance_area_m2",
+    "pv_median_2025",
+    "pv_fraction_2025",
+    "ue_median_2025",
+    "water_fraction_2025",
+    "unclear_fraction_2025",
+    "valid_observation_count_2025",
+    "valid_pixel_fraction_2025",
+    "block_year_eligible_2025",
+    "all_years_eligible_2025",
+    "high_ue_fraction_20_2025",
+    "high_ue_fraction_25_2025",
+    "high_ue_fraction_30_2025",
+    "delta_pv_2024_2025_fraction",
+    "benchmark_role",
+    "spatial_axis_rank",
+    "spatial_axis_score",
+    "primary_component"
+  ],
+  "leakage_diagnostic": {
+    "lomo_source_training_fraction": 0.7,
+    "random_calibration_fraction": 0.25,
+    "random_test_fraction": 0.25,
+    "random_training_fraction": 0.5
+  },
+  "outcome": {
+    "column": "delta_pv_2024_2025_fraction",
+    "definition": "(DEA annual PV median 2025 - DEA annual PV median 2024)/100",
+    "interpretation": "observed satellite-product green fractional-cover change; not latent ecological truth"
+  },
+  "predictor_tracks": [
+    "RF_PRIMARY",
+    "XGB_CONFIRMATION"
+  ],
+  "predictors": [
+    "pv_fraction_2023",
+    "pv_fraction_2024",
+    "pv_change_2023_2024",
+    "ue_median_2023",
+    "ue_median_2024",
+    "valid_observation_count_2023",
+    "valid_observation_count_2024",
+    "water_fraction_2023",
+    "water_fraction_2024",
+    "unclear_fraction_2023",
+    "unclear_fraction_2024",
+    "high_ue_fraction_20_2023",
+    "high_ue_fraction_20_2024",
+    "rainfall_2023_mm",
+    "rainfall_2024_mm",
+    "et_short_crop_2023_mm",
+    "et_short_crop_2024_mm",
+    "soil_organic_carbon_pct_0_15cm",
+    "soil_ph_cacl2_0_15cm",
+    "soil_clay_pct_0_15cm",
+    "soil_bulk_density_g_cm3_0_15cm",
+    "soil_available_water_capacity_mm_0_100cm",
+    "terrain_elevation_m",
+    "terrain_slope_deg",
+    "terrain_aspect_sin",
+    "terrain_aspect_cos",
+    "terrain_roughness",
+    "mine_is_mtarthur",
+    "mine_is_hvo",
+    "mine_is_bulga"
+  ],
+  "quality_sensitivity": {
+    "description": "Frozen Stage2B UE20 sensitivity; reporting sensitivity only, not a new selection/tuning rule.",
+    "max_high_ue_fraction": 0.5,
+    "max_water_fraction": 0.5,
+    "strict_high_ue_threshold": 20.0
+  },
+  "real_application_claim_boundary": {
+    "M1_operational": true,
+    "M2_treatment_route_operational": false,
+    "M3_operational": true,
+    "M4_treatment_route_operational": false,
+    "M5_operational": true,
+    "M6_treatment_route_operational": false,
+    "annual_rehabilitation_implementation_ratio_constructible": false,
+    "authentic_longitudinal_continuous_treatment_available": false,
+    "bare_ground_confirmatory_outcome_available_in_frozen_stage2b": false,
+    "causal_validity_evidence_source": "controlled simulation and MineDoseBench, not the NSW real demonstration",
+    "mapped_rehabilitation_fraction_is_causal_treatment": false,
+    "mapped_rehabilitation_fraction_is_predictor": false,
+    "mapped_rehabilitation_fraction_use": "descriptive snapshot exposure / map context only",
+    "real_demo_purpose": "product-aware, leakage-aware, MAUP-aware spatial uncertainty and refusal demonstration",
+    "real_intervals_are_counterfactual_potential_outcome_intervals": false,
+    "real_intervals_interpretation": "held-out observed-product predictive uncertainty under the frozen spatial/product-quality design"
+  },
+  "rf_hyperparameters": {
+    "bootstrap": true,
+    "max_features": 0.85,
+    "min_samples_leaf": 5,
+    "n_estimators": 240,
+    "n_jobs": 1
+  },
+  "selected_mines": [
+    {
+      "MineID": "{6D7CDE03-0BFA-463A-98C1-30FC80627DC4}",
+      "MineN": "Mt Arthur Coal"
+    },
+    {
+      "MineID": "{683E759A-5A0D-4F58-A64D-2E9694440DF1}",
+      "MineN": "Hunter Valley Operations"
+    },
+    {
+      "MineID": "{85D8BA5D-8512-4052-AED6-9A830E396A56}",
+      "MineN": "Bulga Complex"
+    }
+  ],
+  "spatial_route": {
+    "local_calibration_slots": 5,
+    "m": 64,
+    "rho_grid": [
+      0.0,
+      0.2,
+      0.4,
+      0.6,
+      0.8
+    ],
+    "sensitivity_m": 32,
+    "sigma_bounds": [
+      0.005,
+      0.25
+    ]
+  },
+  "split_contract": {
+    "buffer1_max": 0.36,
+    "buffer2_max": 0.56,
+    "calibration_max": 0.8,
+    "nuisance_max": 0.3,
+    "support_max": 0.5,
+    "test_above": 0.8
+  },
+  "support_thresholds": {
+    "maximum_normalized_weight": 0.5,
+    "minimum_ess": 3.0,
+    "minimum_graph_safe_count": 20,
+    "n3_diagnostic_lower_bound_must_be_finite_and_positive": true
+  },
+  "version": "1.0.0-stage6a-nsw-real-demonstration-freeze-candidate",
+  "xgb_hyperparameters": {
+    "colsample_bytree": 1.0,
+    "learning_rate": 0.04,
+    "max_depth": 3,
+    "n_estimators": 220,
+    "n_jobs": 1,
+    "reg_lambda": 1.0,
+    "subsample": 1.0,
+    "tree_method": "hist"
+  }
+}

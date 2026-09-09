@@ -1,0 +1,56 @@
+{
+  "aggregate_sha256": "053e09d0ab54fad015c5c2787029ff8bbb1b28195b31115f7ae76cfe6cd68177",
+  "file_count": 10,
+  "files": [
+    {
+      "file": "BLOCK_LEVEL_CONTEXT_SUPPORT_CENSUS.csv.gz",
+      "sha256": "068de64184abaade4213898af2ab7dbd1f96f69362c1c4e8ea845896e2541325",
+      "size": 117838
+    },
+    {
+      "file": "CONTEXT_COMPLETE_CANDIDATE_BLOCKS.csv",
+      "sha256": "ff6db8038d123311c2ad7927aa7c98f514ef4fa7d3bcb5ff2676fd5365a4ec25",
+      "size": 2223072
+    },
+    {
+      "file": "CONTEXT_SUPPORT_UNION_BY_BLOCK.csv.gz",
+      "sha256": "2efab02dfa430fbba2abd93d5688d9a2da44cbaf1db339b890fc10067a967708",
+      "size": 69721
+    },
+    {
+      "file": "CONTEXT_UNSUPPORTED_BLOCKS.csv",
+      "sha256": "7bdc301f90eb2a955845d7dc06328e8809dbb0484e94e060f7e9c802d9c86a7f",
+      "size": 21906
+    },
+    {
+      "file": "READ_ME_FIRST.txt",
+      "sha256": "ff08ddee8ead87505b6f88384ae601c717ce6aacaf072357da6f80f4ec5c15b5",
+      "size": 538
+    },
+    {
+      "file": "SOURCE_LAYER_SUPPORT_SUMMARY.csv",
+      "sha256": "dd656f401b3e52d3270e28f4c4153f8dc55697ee8d73c2c72f61872f16440887",
+      "size": 5644
+    },
+    {
+      "file": "SOURCE_SUPPORT_CENSUS_MANIFEST.json",
+      "sha256": "0324e90744d13237c2e256b8164563f61b790646523b455a05dc107cd2f28ec8",
+      "size": 40863
+    },
+    {
+      "file": "SUPPORT_CENSUS_REPORT.json",
+      "sha256": "031abfc34f9e120d5c9bab5333fd178e79bc28eb9618b405f0dc99e90e153814",
+      "size": 1765
+    },
+    {
+      "file": "SUPPORT_CENSUS_VERIFICATION.json",
+      "sha256": "5f3a06e4722719bc2e186e748ee9063710afbe24effea95f1dfcb0d339259504",
+      "size": 502
+    },
+    {
+      "file": "SUPPORT_SUMMARY_BY_MINE.csv",
+      "sha256": "94fc3413bfef0c0b35af70bf9152669546dfdf363f2204358a9a80b82685b579",
+      "size": 365
+    }
+  ]
+}

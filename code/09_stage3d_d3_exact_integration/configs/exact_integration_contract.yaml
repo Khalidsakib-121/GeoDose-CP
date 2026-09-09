@@ -1,0 +1,74 @@
+stage: Stage3D_D3_M1_M6_Exact_Integration
+version: 1.0.1
+alpha: 0.10
+scientific_scope:
+  purpose: exact-reference common-interface integration before nuisance-variant/pilot work
+  publication_evidence: false
+  repeated_coverage_evidence: false
+  production_experiment: false
+  pilot_run: false
+  mine_dose_bench: false
+  n2_n3: false
+method_identity:
+  M1:
+    definition: frozen Stage3C standard split conformal
+    implementation_source: exact vendored copy of frozen Stage3C methods/weights
+    principal: true
+  M2:
+    definition: frozen Stage3C dose-only weighted conformal
+    implementation_source: exact vendored copy of frozen Stage3C methods/weights
+    principal: true
+  M3:
+    definition: accepted D3 residual-only graph-local conditional-response conformal
+    implementation_source: exact vendored copy of accepted M4 package M3 engine
+    principal: true
+  M4:
+    definition: accepted D3 naive one-normalization product d_j*s_j(y)
+    implementation_source: exact vendored copy of accepted M4 package
+    principal: true
+    theorem_backed_general: false
+  M5:
+    definition: frozen Stage3C deterministic graph-safe weighted conformal
+    implementation_source: exact vendored copy of frozen Stage3C methods/graph/weights
+    principal: true
+  M6:
+    definition: accepted D1/D2 G1->G2->G3 exact candidate inversion
+    integration_adapter: accepted_D2_output_backed_exact_reference
+    principal: true
+    full_real_line_claim: false
+    registered_domain: [-8.0, 8.0]
+heuristics:
+  H1:
+    principal: false
+    status: frozen_geographic_ablation_only
+  H4:
+    principal: false
+    status: frozen_geographic_product_ablation_only
+exact_grid:
+  case_id: S4_RHO060
+  fixture_id: G6_GAUSS_INTERIOR
+  target_dose: 0.90
+  spatial_rho: 0.60
+  candidate_source: accepted_D2_candidate_trace_all_registered_candidates
+  target_node: 320
+  block_nodes: [294, 318, 319, 343, 344, 320]
+  nuisance_variant: OT_TG
+reductions:
+  R1:
+    registered_owner: Stage3D
+    exact_gate_status: verify_exact_reference_no_approximation
+  R2:
+    registered_owner: Stage3C/Stage3D
+    exact_gate_status: verify_weighted_conformal_component_reduction
+  R3:
+    registered_owner: Stage3E
+    exact_gate_status: deferred_not_applicable_to_exact_D3
+  R4:
+    registered_owner: Stage3C
+    exact_gate_status: verify_ordinary_conformal_component_reduction
+claim_boundary:
+  D2_candidate_trace_is_exact_only_at_evaluated_candidates: true
+  D2_prediction_set_is_outer_numerical_approximation_within_registered_domain: true
+  M6_new_data_pilot_engine_claimed: false
+  estimated_M6_exact_coverage_claimed: false
+  next_stage_requires_source_level_M6_adapter_and_nuisance_variant_integration: true

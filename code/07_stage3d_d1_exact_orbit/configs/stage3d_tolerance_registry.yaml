@@ -1,0 +1,15 @@
+float_dtype: float64
+probability_sum_abs_tolerance: 5.0e-12
+scalar_vector_logweight_abs_tolerance: 2.0e-10
+scalar_vector_probability_abs_tolerance: 2.0e-12
+full_local_constant_range_tolerance: 2.0e-9
+full_target_probability_abs_tolerance: 2.0e-11
+full_target_law_max_states: 720
+jacobian_abs_tolerance: 1.0e-12
+mixed_measure_normalization_abs_tolerance: 2.0e-8
+target_tilt_cancellation_abs_tolerance: 2.0e-14
+minimum_precision_eigenvalue: 1.0e-10
+non_gaussian_min_abs_residual: 1.0e-14
+candidate_algebra_shift: 0.75
+size8_scalar_audit_states: 40320
+size8_full_local_audit_states: 128

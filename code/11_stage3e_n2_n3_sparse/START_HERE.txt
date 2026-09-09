@@ -1,0 +1,6 @@
+1. Use only this Stage3E v1.0 package.
+2. Extract All to D:\GeoDose_Stage3E_N2_N3_Scalable_Certification_v1_0.
+3. Open the inner project folder.
+4. Double-click RUN_STAGE3E.bat.
+5. Send GeoDose_Stage3E_N2_N3_SCALABLE_CERTIFICATION_OUTPUTS.zip back to ChatGPT.
+6. Do NOT start the 20-rep pilot or production run until Stage3E output is independently accepted.

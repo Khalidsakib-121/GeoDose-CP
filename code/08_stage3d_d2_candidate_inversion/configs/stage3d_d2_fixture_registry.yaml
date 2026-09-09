@@ -1,0 +1,14 @@
+full_inversion_fixtures:
+  - d2_fixture_id: G6_GAUSS_INTERIOR
+    d1_evaluation_id: G6_GAUSS_INTERIOR_TRUTH
+  - d2_fixture_id: G6_GAUSS_DUPLICATE
+    d1_evaluation_id: G6_GAUSS_DUPLICATE_TRUTH
+  - d2_fixture_id: G6_GAUSS_ENDPOINT0
+    d1_evaluation_id: G6_GAUSS_ENDPOINT0
+  - d2_fixture_id: G6_GAUSS_ENDPOINT1
+    d1_evaluation_id: G6_GAUSS_ENDPOINT1
+  - d2_fixture_id: G6_NONGAUSSIAN_INTERIOR
+    d1_evaluation_id: G6_NONGAUSSIAN_INTERIOR_TRUTH
+stress_fixtures:
+  - d2_fixture_id: G8_GAUSS_INTERIOR
+    d1_evaluation_id: G8_GAUSS_INTERIOR_TRUTH
