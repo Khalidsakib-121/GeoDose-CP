@@ -12,7 +12,6 @@ Publication code, frozen configuration material, compact data provenance, and re
 - `data/` — compact source registry and exact frozen acquisition records; large third-party source datasets are not duplicated.
 - `provenance/` — source/archive identities, accepted authorities, and web/source records.
 - `docs/` — data/claim boundaries and redistribution notes.
-- `paper/` — manuscript-ready Code and Data Availability template.
 
 ## Scientific boundaries
 
